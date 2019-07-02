@@ -1,0 +1,39 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="Portal.Views.Site1" %>
+
+<!DOCTYPE html>
+
+<html dir="rtl">
+<head runat="server">
+    <title>سامانه های هوشمند سیمرغ</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <asp:Table runat="server" ID="Table1" Width="100%" Height="700">
+                <asp:TableRow runat="server" Height="650" >
+                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
+                        <asp:ContentPlaceHolder ID="CPHR" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="80%" VerticalAlign="Top">
+                        <asp:ContentPlaceHolder ID="CPHC" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>
+                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
+                        <asp:ContentPlaceHolder ID="CPHL" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>
+                </asp:TableRow>
+                <asp:TableRow runat="server" Height="50" >
+                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="100%" ColumnSpan="3" VerticalAlign="Top">
+                        <asp:ContentPlaceHolder ID="CPHF" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </asp:TableCell>
+                </asp:TableRow>
+            </asp:Table>           
+        </div>
+    </form>
+</body>
+</html>
