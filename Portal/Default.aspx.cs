@@ -39,7 +39,7 @@ namespace Portal
             client.BaseAddress = new Uri("http://localhost/api/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            var response = client.PostAsJsonAsync("api/SiteUser/", luser).Result;
+            var response = client.PostAsync("api/SiteUser/", luser).Result;
             //               Button1.Text = "3";
             if (response.IsSuccessStatusCode)
             {
