@@ -4,49 +4,51 @@
 
 <html>
 <head runat="server">
-    
+
     <meta charset="UTF-8" />
-        <title>مرجع تخصصی برنامه نویسان</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="keywords" content="spookynet.org, webdesignlab.org " /> 
-        <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
-        <link rel='stylesheet' href='css/shortcodes.css' type='text/css' />
-        <link rel='stylesheet' href='css/fonts/font-awesome.css' type='text/css' />
-        <link rel='stylesheet' href='css/revslider.css' type='text/css' />
-        <link rel='stylesheet' href='css/style.css' type='text/css' />
-        <link rel='stylesheet' href='css/bootstrap-responsive.css' type='text/css' />
-        <link rel='stylesheet' href='css/media-queries.css' type='text/css' />
-        <link rel='stylesheet' href='css/skins/switcher.php?default=black.css' type='text/css' />
-        <script type='text/javascript' src='http://html5shim.googlecode.com/svn/trunk/html5.js?ver=3.5.1'></script>
-        <!-- Google Webfonts -->
-        <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet" type="text/css" />
-        <link href="images/favicon.ico" rel="shortcut icon" />
+    <title>سامانه های هوشمند سیمرغ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="spookynet.org, webdesignlab.org " />
+    <link rel='stylesheet' href='css/bootstrap.css' type='text/css' />
+    <link rel='stylesheet' href='css/shortcodes.css' type='text/css' />
+    <link rel='stylesheet' href='css/fonts/font-awesome.css' type='text/css' />
+    <link rel='stylesheet' href='css/revslider.css' type='text/css' />
+    <link rel='stylesheet' href='css/style.css' type='text/css' />
+    <link rel='stylesheet' href='css/bootstrap-responsive.css' type='text/css' />
+    <link rel='stylesheet' href='css/media-queries.css' type='text/css' />
+    <link rel='stylesheet' href='css/skins/switcher.php?default=black.css' type='text/css' />
+    <script type='text/javascript' src='http://html5shim.googlecode.com/svn/trunk/html5.js?ver=3.5.1'></script>
+    <!-- Google Webfonts -->
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300" rel="stylesheet" type="text/css" />
+
+    <link href="favicon.ico" rel="shortcut icon" />
+
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
-    <body class="home" style="background-color:#222021;">
-     
+
+    <body class="home" style="background-color: #222021;">
 
 
 
 
-   <div id="wrapper"  >
-            <header id="header" class="container navbar" style="width:80%;">
+
+        <div id="wrapper">
+            <header id="header" class="container navbar" style="width: 80%;">
                 <!-- Collapse button mobile-->
-                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> 
-<span class="icon-bar"></span>  <span class="icon-bar"></span> 
+                <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"><span class="icon-bar"></span>
+                    <span class="icon-bar"></span><span class="icon-bar"></span>
                 </a>
                 <!-- Logo -->
                 <h1>
-                    
-                     
-                   <%-- 
-                    <a id="logo" --%>
-<%--class="pull-right" href="https://www.google.com/">--%>
-                        <img  class="pull-right" src="img/Logo - 1.png" width="150">
 
-                   <%-- </a>--%>
+
+                    <%-- 
+                    <a id="logo" --%>
+                    <%--class="pull-right" href="https://www.google.com/">--%>
+                    <img class="pull-right" src="img/Logo - 1.png" width="150">
+
+                    <%-- </a>--%>
     
 
                 </h1>
@@ -54,7 +56,7 @@
                 <div id="top-contact">
                     <div class="pull-left">
                         <p>
-                      <span class="icon-envelope-alt"></span><a href="#">Seemorgh@simorghsamaneh.ir</a>
+                            <span class="icon-envelope-alt"></span><a href="#">Seemorgh@simorghsamaneh.ir</a>
                         </p>
                         <p><span class="icon-phone"></span>88454816</p>
                     </div>
@@ -63,11 +65,11 @@
                 <!-- end top-contact -->
                 <div class="clear"></div>
                 <!-- Menu -->
-                <nav id="menu" class="nav-collapse collapse default-menu" style="height:40px;">
-                    <ul id="menu-top-menu" class="nav" style="align-self:center; width:100%; height:55px; " >
+                <nav id="menu" class="nav-collapse collapse default-menu" style="height: 55px;">
+                    <ul id="menu-top-menu" class="nav" style="align-self: center; width: 100%; height: 55px;">
                         <!-- Home -->
-                        <li class="dropdown current_page_item" data-dropdown="dropdown" ><a href="#" class="dropdown-toggle" data-target="#">صفحه اصلی</a>
-                           <%-- <ul class="dropdown-menu">
+                        <li class="dropdown current_page_item" data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">صفحه اصلی</a>
+                            <%-- <ul class="dropdown-menu">
                                 <li><a href="index2.html">کلیپ اسلایدر</a>
                                 </li>
                                 <li><a href="index3.html">اسلایدر
@@ -79,8 +81,8 @@
                         </li>
                         <!-- About -->
                         <li data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">درباره سیمرغ
-</a>
-<%--                            <ul class="dropdown-menu">
+                        </a>
+                            <%--                            <ul class="dropdown-menu">
                                 <li><a href="about.html">درباره ما</a>
                                 </li>
                                 <li><a href="sidebar-left.html"> آشنایی با شبکه علمی</a>
@@ -95,7 +97,7 @@
                             </ul>--%>
                         </li>
                         <!-- Services -->
-                        <li><a href="http://localhost:60838/Login">ورود کاربران</a>
+                        <li><a href="http://localhost:51323/Home.aspx">ورود کاربران</a>
                         </li>
                         <!-- Portfolio -->
                         <li data-dropdown="dropdown"><a href="http://localhost:60838/NemooneKar" class="dropdown-toggle" data-target="#">نمونه کار</a>
@@ -119,7 +121,7 @@
                             </ul>--%>
                         </li>
                         <!-- Blog -->
-                       <%-- <li data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">وبلاگ</a>
+                        <%-- <li data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">وبلاگ</a>
                           <%--  <ul class="dropdown-menu">
                                 <li><a href="blog-1.html">وبلاگ عرض کامل</a>
                                 </li>
@@ -131,7 +133,7 @@
 پست 2</a>
                                 </li>
                             </ul>--%>
-                        </li>--%>
+                        <%--    </li>--%>
                         <!-- Contact -->
                         <li><a href="contact.html">تماس با ما</a>
 
@@ -151,15 +153,18 @@
             <!-- end #header -->
 
 
-            <section id="main" class="container" style="width:80%" >
-                <section id="homeSlider" class="revslider" data-speed="6000" data-height="300" style="height:300px; align-self:center;">
-                    <div class="bannercontainer" style="background:transparent !important;height:300px; align-self:center; align-content:center; " >
-                        <div class="banner" style="height:300px; align-self:center;">
+            <section id="main" class="container" style="width: 80%">
+                <section id="homeSlider" class="revslider" data-speed="6000" data-height="300" style="height: 350px; align-self: center;">
+                    <div class="bannercontainer" style="background: transparent !important; height: 350px; align-self: center; align-content: center;">
+                        <div class="banner" style="height: 350px; align-self: center;">
                             <ul>
                                 <!-- BOXFADE -->
+
+                                <%-- شروع اسلاید 4 --%>
+
                                 <%--<li data-transition="boxfade" data-slotamount="5">
                                     <%--<img src="img/template/transparent.png">--%>
-<%--                                    <div class="caption lft big_white" data-x="70" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
+                                <%--                                    <div class="caption lft big_white" data-x="70" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
 طراحی هوشمندانه، خلاق
 
                                         <br />
@@ -169,19 +174,19 @@
 </div>--%>
 
 
-<%--                                    <div class="caption lft small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">توضیحات اسلاید چهارم
+                                <%--                                    <div class="caption lft small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">توضیحات اسلاید چهارم
                                         <br />--------------توضیحات اسلاید چهارم-----------------<a href="#">
 اطلاعات بیشتر
 </a>--%>
-                                        <%-- slider4 --%>
-                                   <%-- </div>--%>
-<%--                                    <div class="caption lfr" data-x="460" data-y="-1" data-speed="400" data-start="1600" data-easing="easeOutExpo">
+
+                                <%-- </div>--%>
+                                <%--                                    <div class="caption lfr" data-x="460" data-y="-1" data-speed="400" data-start="1600" data-easing="easeOutExpo">
                                         <img src="img/slides/2.png">
                                     </div>
                                     <div class="caption lfr" data-x="0" data-y="-1" data-speed="400" data-start="1300" data-easing="easeOutExpo">
                                         <img src="img/slides/stripe.png">
                                     </div>--%>
-<%--                                    <div class="caption lfr" data-x="86" data-y="-1" data-speed="400" data-start="1400" data-easing="easeOutExpo">
+                                <%--                                    <div class="caption lfr" data-x="86" data-y="-1" data-speed="400" data-start="1400" data-easing="easeOutExpo">
                                         <img src="img/slides/stripe.png">
                                     </div>
                                     <div class="caption lfr" data-x="172" data-y="-1" data-speed="400" data-start="1500" data-easing="easeOutExpo">
@@ -189,32 +194,40 @@
                                     </div>--%>
                                 <%--</li>--%>
 
+                                <%-- پایان اسلاید 4 --%>
 
-                                <%-- تصویر اسلاید سوم --%>
-                                --%><li data-transition="boxfade" data-slotamount="5">
+
+
+
+
+                                <%-- شروع اسلاید سوم --%>
+
+
+
+                                <%--                                <li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/sazandegi.png">
                                     <div class="caption lft big_white" data-x="209" data-y="64" data-speed="900" data-start="900" data-easing="easeOutBack">
 
-طراحی سی ام اس خبری</div>
+طراحی سی ام اس خبری</div>--%>
 
 
-                                    <%-- تصاویر روی هم --%>
-<%--                                    <div class="caption lfr" data-x="54" data-y="169" data-speed="1000" data-start="1200" data-easing="easeOutExpo">
+                                <%-- تصاویر روی هم --%>
+                                <%--                                    <div class="caption lfr" data-x="54" data-y="169" data-speed="1000" data-start="1200" data-easing="easeOutExpo">
                                         <img src="img/sabt.png">
                                     </div>--%>
-<%--                                    <div class="caption lfr" data-x="565" data-y="166" data-speed="1000" data-start="1600" data-easing="easeOutExpo">
+                                <%--                                    <div class="caption lfr" data-x="565" data-y="166" data-speed="1000" data-start="1600" data-easing="easeOutExpo">
                                         <img src="img/sazandegi.png">
                                     </div>--%>
-<%--                                    <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
+                                <%--                                    <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
                                         <img src="img/slides/2.png">
                                     </div>--%>
 
-                                </li>
+                                <%--</li>--%>
 
 
 
-
-                                <li data-transition="boxfade" data-slotamount="5">
+                                <%-- slider2 --%>
+                                <%--                                <li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/nern.png">
                                     <div class="caption lfr big_white" data-x="494" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
 
@@ -227,9 +240,6 @@
                                         <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  <a href="#">
 اطلاعات بیشتر
 </a>
-
-                                        <%-- slider2 --%>
-
                                     </div>
                                     <div class="caption lfl" data-x="-1" data-y="51" data-speed="400" data-start="800" data-easing="easeOutExpo">
                                         <img src="img/slides/2.png">
@@ -243,26 +253,32 @@
                                     <div class="caption lfr" data-x="654" data-y="-1" data-speed="400" data-start="1500" data-easing="easeOutExpo">
                                         <img src="img/slides/image0011.png">
                                     </div>
-                                </li>
+                                </li>--%>
+
+
+
+
+
 
                                 <%-- اولین اسلایدر --%>
 
                                 <li data-transition="fade" data-slotamount="5">
-                                    <img src="img/template/transparent.png">
+                                    <%--         <img src="img/template/transparent.png">--%>
                                     <div class="caption lfr" data-x="359" data-y="26" data-speed="400" data-start="800" data-easing="easeOutExpo">
                                         <img src="img/Logo - 1.png">
                                     </div>
                                     <div class="caption lfb big_white" data-x="66" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
-
-سامانه های هوشمند   
-                                        <br />سیمرغ</div>
-               <%--                     <div class="caption lfb small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+                                        سامانه های هوشمند   
+                                        <br />
+                                        سیمرغ
+                                    </div>
+                                    <%--                     <div class="caption lfb small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
                                         <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
                                         <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ <a href="#">اطلاعات بیشتر</a>
                                     </div>--%>
                                 </li>
                             </ul>
-                            <div class="tp-bannertimer" style="align-self:center;"></div>
+                            <div class="tp-bannertimer" style="align-self: center;"></div>
                         </div>
                     </div>
                 </section>
@@ -271,49 +287,48 @@
 
 
 
-         <form id="form1" runat="server">
-        <div>
-            <asp:Table runat="server" ID="Table1" Width="100%" Height="700">
-                <asp:TableRow runat="server" Height="650" >
-                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
-                        <asp:ContentPlaceHolder ID="CPHR" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="80%" VerticalAlign="Top">
-                        <asp:ContentPlaceHolder ID="CPHC" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </asp:TableCell>
-                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
-                        <asp:ContentPlaceHolder ID="CPHL" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </asp:TableCell>
-                </asp:TableRow>
-                <asp:TableRow runat="server" Height="50" >
-                    <asp:TableCell runat="server" HorizontalAlign="Center" Width="100%" ColumnSpan="3" VerticalAlign="Top">
-                        <asp:ContentPlaceHolder ID="CPHF" runat="server">
-                        </asp:ContentPlaceHolder>
-                    </asp:TableCell>
-                </asp:TableRow>
-            </asp:Table>           
-        </div>
-    </form>
+                <form id="form1" runat="server">
+                    <div>
+                        <asp:Table runat="server" ID="Table1" Width="100%" Height="700">
+                            <asp:TableRow runat="server" Height="650">
+                                <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
+                                    <asp:ContentPlaceHolder ID="CPHR" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </asp:TableCell>
+                                <asp:TableCell runat="server" HorizontalAlign="Center" Width="80%" VerticalAlign="Top">
+                                    <asp:ContentPlaceHolder ID="CPHC" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </asp:TableCell>
+                                <asp:TableCell runat="server" HorizontalAlign="Center" Width="10%" VerticalAlign="Top">
+                                    <asp:ContentPlaceHolder ID="CPHL" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                            <asp:TableRow runat="server" Height="50">
+                                <asp:TableCell runat="server" HorizontalAlign="Center" Width="100%" ColumnSpan="3" VerticalAlign="Top">
+                                    <asp:ContentPlaceHolder ID="CPHF" runat="server">
+                                    </asp:ContentPlaceHolder>
+                                </asp:TableCell>
+                            </asp:TableRow>
+                        </asp:Table>
+                    </div>
+                </form>
                 <!-- end main-content -->
 
 
             </section>
             <!-- end main -->
-            <footer id="footer" >
+            <footer id="footer">
                 <div id="footer-stripe"></div>
-                <div id="footer-container" class="container" style="height:200px;">
+                <div id="footer-container" class="container" style="height: 200px;">
                     <div class="row-fluid">
                         <div class="widget span3">
-                            <h3>
-درباره ما 
-</h3>
+                            <h3>درباره ما 
+                            </h3>
                             <div class="line"></div>
                             <div class="textwidget">
                                 <p>اطلاعاتی درباره سیمرغ</p>
-                                
+
                             </div>
                         </div>
                         <div class="widget span3">
@@ -321,46 +336,42 @@
                             <div class="clear"></div>
                             <div class="line"></div>
                             <div class="twitter-feed-display" data-username="envato" data-tweets="2"></div>
-							<a href="http://spookynet.org"><img src="http://spookynet.org/zapasowe/x.png"></a>
-                            <a href="http://webdesignlab.org"><img src="http://webdesignlab.org/x.png"></a>
+                            <a href="http://spookynet.org">
+                                <img src="http://spookynet.org/zapasowe/x.png"></a>
+                            <a href="http://webdesignlab.org">
+                                <img src="http://webdesignlab.org/x.png"></a>
                         </div>
                         <div class="widget span3">
-                            <h3>
-از وبلاگ
-</h3>
+                            <h3>از وبلاگ
+                            </h3>
                             <div class="line"></div>
                             <ul>
-                                <li><a href="#" title="Gallery post example">
-به عنوان مثال پست گالری
-</a>
+                                <li><a href="#" title="Gallery post example">به عنوان مثال پست گالری
+                                </a>
                                 </li>
-                                <li><a href="#" title="Audio file post example">
-به عنوان مثال ارسال فایل های صوتی
-</a>
+                                <li><a href="#" title="Audio file post example">به عنوان مثال ارسال فایل های صوتی
+                                </a>
                                 </li>
-                                <li><a href="#" title="Beautiful quote post example">
-به عنوان مثال پست نقل قول زیباست
-</a>
+                                <li><a href="#" title="Beautiful quote post example">به عنوان مثال پست نقل قول زیباست
+                                </a>
                                 </li>
-                                <li><a href="#" title="This is a video post example">
-این مثال تصویری پست است
-</a>
+                                <li><a href="#" title="This is a video post example">این مثال تصویری پست است
+                                </a>
                                 </li>
-                                <li><a href="#" title="This is a simple aside post format">
-این فرمت پست کنار ساده است
-</a>
+                                <li><a href="#" title="This is a simple aside post format">این فرمت پست کنار ساده است
+                                </a>
                                 </li>
                             </ul>
                         </div>
                         <div class="widget span3">
-                             <h3>تماس با ما</h3>
+                            <h3>تماس با ما</h3>
                             <div class="line"></div>
                             <ul class="contact">
                                 <li><span class="icon-suitcase"></span>
- آدرس: خیابان مطهری - کوچه سرافراز - خیابان یکم - پلاک 5</li>
+                                    آدرس: خیابان مطهری - خیابان سرافراز - خیابان یکم - پلاک 5</li>
                                 <li><span class="icon-phone-sign"></span>021-88222222</li>
                                 <li><span class="icon-envelope-alt"></span>
-Seemorgh@simorghsamaneh.ir</li>
+                                    Seemorgh@simorghsamaneh.ir</li>
                             </ul>
                             <div class="clear"></div>
                         </div>
@@ -370,31 +381,30 @@ Seemorgh@simorghsamaneh.ir</li>
                 <!-- end footer-container -->
                 <div id="copyleft">
                     <div class="line"></div>
-                    <div class="container" style="height:30px;">
+                    <div class="container" style="height: 30px;">
                         <div class="row-fluid">
-                            <div class="span6" style="align-content:center">
+                            <div class="span6" style="align-content: center">
                                 <a id="footer-logo" href="index.html">
                                     <img src="img/Logo - 1.png" width="70px" />
                                 </a>
                                 <p>
-کلیه حقوق این سایت برای توسعه دهنده محفوظ است.
+                                    کلیه حقوق این سایت برای توسعه دهنده محفوظ است.
 
                                     <br />
-طراحی و توسعه توسط
-<a href="index.html#">سامانه های هوشمند سیمرغ </a>
+                                    طراحی و توسعه توسط
+                                    <a href="index.html#">سامانه های هوشمند سیمرغ </a>
                                 </p>
                             </div>
                             <!-- end span6 -->
                             <div class="span6">
                                 <div class="pull-left">
-                                    <span>
-Twitter</span></a>
+                                    <span>Twitter</span></a>
                                     <a class="social_icn face" href="#" target="_blank">
                                         <span>Facebook</span></a>
                                     <a class="social_icn rss" href="#" target="_blank"><span>RSS</span></a>
 
                                     <a class="social_icn tumblr" href="#" target="_blank"><span>Tumblr
-</span></a>
+                                    </span></a>
                                 </div>
                             </div>
                         </div>
@@ -420,6 +430,6 @@ Twitter</span></a>
         <script language="JavaScript" type="text/javascript">
             var themeTitle = "0Bellum";
         </script>
-</body>
-</body>
+    </body>
+
 </html>
