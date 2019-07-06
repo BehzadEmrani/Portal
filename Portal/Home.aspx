@@ -20,7 +20,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Center" Width="100%" ColumnSpan="2">
-                     <asp:Button runat="server" ID="Button1" Text="ورود" width="100" OnClick="Button1_Click" ></asp:Button>
+                     <asp:Button runat="server" ID="Button1" Text="ورود" width="100" OnClick="Button1_Click" class="nbtn black"></asp:Button>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>

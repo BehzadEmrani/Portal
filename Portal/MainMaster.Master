@@ -153,57 +153,67 @@
 
             <section id="main" class="container" style="width:80%" >
                 <section id="homeSlider" class="revslider" data-speed="6000" data-height="300" style="height:300px; align-self:center;">
-                    <div class="bannercontainer" style="background:transparent !important;height:300px; align-self:center; " >
+                    <div class="bannercontainer" style="background:transparent !important;height:300px; align-self:center; align-content:center; " >
                         <div class="banner" style="height:300px; align-self:center;">
                             <ul>
                                 <!-- BOXFADE -->
-                                <li data-transition="boxfade" data-slotamount="5">
-                                    <img src="img/template/transparent.png">
-                                    <div class="caption lft big_white" data-x="70" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
+                                <%--<li data-transition="boxfade" data-slotamount="5">
+                                    <%--<img src="img/template/transparent.png">--%>
+<%--                                    <div class="caption lft big_white" data-x="70" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
 طراحی هوشمندانه، خلاق
 
                                         <br />
 و حرفه ای
 
 
-</div>
-                                    <div class="caption lft small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">توضیحات اسلاید چهارم
+</div>--%>
+
+
+<%--                                    <div class="caption lft small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">توضیحات اسلاید چهارم
                                         <br />--------------توضیحات اسلاید چهارم-----------------<a href="#">
 اطلاعات بیشتر
-</a>
+</a>--%>
                                         <%-- slider4 --%>
-                                    </div>
-                                    <div class="caption lfr" data-x="460" data-y="-1" data-speed="400" data-start="1600" data-easing="easeOutExpo">
+                                   <%-- </div>--%>
+<%--                                    <div class="caption lfr" data-x="460" data-y="-1" data-speed="400" data-start="1600" data-easing="easeOutExpo">
                                         <img src="img/slides/2.png">
                                     </div>
                                     <div class="caption lfr" data-x="0" data-y="-1" data-speed="400" data-start="1300" data-easing="easeOutExpo">
                                         <img src="img/slides/stripe.png">
-                                    </div>
-                                    <div class="caption lfr" data-x="86" data-y="-1" data-speed="400" data-start="1400" data-easing="easeOutExpo">
+                                    </div>--%>
+<%--                                    <div class="caption lfr" data-x="86" data-y="-1" data-speed="400" data-start="1400" data-easing="easeOutExpo">
                                         <img src="img/slides/stripe.png">
                                     </div>
                                     <div class="caption lfr" data-x="172" data-y="-1" data-speed="400" data-start="1500" data-easing="easeOutExpo">
                                         <img src="img/slides/stripe.png">
-                                    </div>
-                                </li>
-                                <li data-transition="boxfade" data-slotamount="5">
+                                    </div>--%>
+                                <%--</li>--%>
+
+
+                                <%-- تصویر اسلاید سوم --%>
+                                --%><li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/sazandegi.png">
                                     <div class="caption lft big_white" data-x="209" data-y="64" data-speed="900" data-start="900" data-easing="easeOutBack">
 
 طراحی سی ام اس خبری</div>
+
+
+                                    <%-- تصاویر روی هم --%>
 <%--                                    <div class="caption lfr" data-x="54" data-y="169" data-speed="1000" data-start="1200" data-easing="easeOutExpo">
                                         <img src="img/sabt.png">
                                     </div>--%>
 <%--                                    <div class="caption lfr" data-x="565" data-y="166" data-speed="1000" data-start="1600" data-easing="easeOutExpo">
                                         <img src="img/sazandegi.png">
                                     </div>--%>
-                                   <%-- <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
+<%--                                    <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
                                         <img src="img/slides/2.png">
                                     </div>--%>
 
-
-
                                 </li>
+
+
+
+
                                 <li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/nern.png">
                                     <div class="caption lfr big_white" data-x="494" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
@@ -244,12 +254,12 @@
                                     </div>
                                     <div class="caption lfb big_white" data-x="66" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
 
-سامانه های هوشمند
+سامانه های هوشمند   
                                         <br />سیمرغ</div>
-                                    <div class="caption lfb small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
+               <%--                     <div class="caption lfb small_white" data-x="70" data-y="230" data-speed="500" data-start="1200" data-easing="easeOutBack">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
                                         <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ 
                                         <br />لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ <a href="#">اطلاعات بیشتر</a>
-                                    </div>
+                                    </div>--%>
                                 </li>
                             </ul>
                             <div class="tp-bannertimer" style="align-self:center;"></div>
@@ -306,14 +316,14 @@
                                 
                             </div>
                         </div>
-<%--                        <div class="widget span3">
+                        <div class="widget span3">
                             <h3>از توییتر</h3>
                             <div class="clear"></div>
                             <div class="line"></div>
                             <div class="twitter-feed-display" data-username="envato" data-tweets="2"></div>
 							<a href="http://spookynet.org"><img src="http://spookynet.org/zapasowe/x.png"></a>
                             <a href="http://webdesignlab.org"><img src="http://webdesignlab.org/x.png"></a>
-                        </div>--%>
+                        </div>
                         <div class="widget span3">
                             <h3>
 از وبلاگ
