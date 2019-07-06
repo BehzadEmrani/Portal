@@ -44,8 +44,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System.Net" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -69,8 +75,244 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="css\bootstrap-responsive.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\fonts\bebasneue-webfont.svg" />
+    <Content Include="css\fonts\font-awesome.css" />
+    <Content Include="css\fonts\fontawesome-webfont.svg" />
+    <Content Include="css\fonts\index.html" />
+    <Content Include="css\fonts\socialico-webfont.svg" />
+    <Content Include="css\fonts\_notes\dwsync.xml" />
+    <Content Include="css\index.html" />
+    <Content Include="css\media-queries.css" />
+    <Content Include="css\revslider.css" />
+    <Content Include="css\shortcodes.css" />
+    <Content Include="css\skins\black.css" />
+    <Content Include="css\skins\black\ajax-loader.gif" />
+    <Content Include="css\skins\black\bg.png" />
+    <Content Include="css\skins\black\bullets.png" />
+    <Content Include="css\skins\black\footer.jpg" />
+    <Content Include="css\skins\black\hover.png" />
+    <Content Include="css\skins\black\index.html" />
+    <Content Include="css\skins\black\light.png" />
+    <Content Include="css\skins\black\logo%402x.png" />
+    <Content Include="css\skins\black\logo.png" />
+    <Content Include="css\skins\black\menu.png" />
+    <Content Include="css\skins\black\search-submit.png" />
+    <Content Include="css\skins\black\social6.png" />
+    <Content Include="css\skins\black\tabs-icons.png" />
+    <Content Include="css\skins\index.html" />
+    <Content Include="css\skins\light.css" />
+    <Content Include="css\skins\light\bg.jpg" />
+    <Content Include="css\skins\light\bg_direction_nav.png" />
+    <Content Include="css\skins\light\btn_normal_left.png" />
+    <Content Include="css\skins\light\btn_normal_right.png" />
+    <Content Include="css\skins\light\bullets.jpg" />
+    <Content Include="css\skins\light\flogo.png" />
+    <Content Include="css\skins\light\footer.jpg" />
+    <Content Include="css\skins\light\hover.png" />
+    <Content Include="css\skins\light\index.html" />
+    <Content Include="css\skins\light\light.png" />
+    <Content Include="css\skins\light\loader.gif" />
+    <Content Include="css\skins\light\logo%402x.png" />
+    <Content Include="css\skins\light\logo.png" />
+    <Content Include="css\skins\light\menu.png" />
+    <Content Include="css\skins\light\quotebg.jpg" />
+    <Content Include="css\skins\light\search-submit.png" />
+    <Content Include="css\skins\light\select.png" />
+    <Content Include="css\skins\light\slider-loader.gif" />
+    <Content Include="css\skins\light\sliderbg.jpg" />
+    <Content Include="css\skins\light\stripe.png" />
+    <Content Include="css\skins\light\timer.png" />
+    <Content Include="css\skins\light\transparent.png" />
+    <Content Include="css\skins\light\triangle.png" />
+    <Content Include="css\skins\switcher.php" />
+    <Content Include="css\skins\switcher.php.html" />
+    <Content Include="css\style.css" />
+    <Content Include="css\_notes\dwsync.xml" />
     <Content Include="Default.aspx" />
+    <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="Home.aspx" />
+    <Content Include="img\accountlogin-icon.png" />
+    <Content Include="img\assets\a1.jpg" />
+    <Content Include="img\assets\a2.jpg" />
+    <Content Include="img\assets\a3.jpg" />
+    <Content Include="img\assets\a4.jpg" />
+    <Content Include="img\assets\a5.jpg" />
+    <Content Include="img\assets\a6.jpg" />
+    <Content Include="img\assets\about.png" />
+    <Content Include="img\assets\avatar.png" />
+    <Content Include="img\assets\bg.jpg" />
+    <Content Include="img\assets\index.html" />
+    <Content Include="img\assets\logo1.jpg" />
+    <Content Include="img\assets\logo2.jpg" />
+    <Content Include="img\assets\logo3.jpg" />
+    <Content Include="img\assets\logo4.jpg" />
+    <Content Include="img\assets\logo5.jpg" />
+    <Content Include="img\assets\member.png" />
+    <Content Include="img\assets\member2.png" />
+    <Content Include="img\assets\member3.png" />
+    <Content Include="img\assets\post.jpg" />
+    <Content Include="img\assets\post4.jpg" />
+    <Content Include="img\assets\post5.jpg" />
+    <Content Include="img\assets\post6.jpg" />
+    <Content Include="img\assets\service1.png" />
+    <Content Include="img\assets\service2.png" />
+    <Content Include="img\assets\_notes\dwsync.xml" />
+    <Content Include="img\glyphicons-halflings-white.png" />
+    <Content Include="img\glyphicons-halflings.png" />
+    <Content Include="img\icons\add-comment.png" />
+    <Content Include="img\icons\arrow-2.jpg" />
+    <Content Include="img\icons\arrow-3.jpg" />
+    <Content Include="img\icons\arrow.png" />
+    <Content Include="img\icons\comments.png" />
+    <Content Include="img\icons\contact.png" />
+    <Content Include="img\icons\index.html" />
+    <Content Include="img\icons\list-arrow.png" />
+    <Content Include="img\icons\list-arrow1.png" />
+    <Content Include="img\icons\list-check.png" />
+    <Content Include="img\icons\list-circle.png" />
+    <Content Include="img\icons\list-error.png" />
+    <Content Include="img\icons\post-icons.png" />
+    <Content Include="img\icons\sep.png" />
+    <Content Include="img\icons\social-media.png" />
+    <Content Include="img\icons\social.png" />
+    <Content Include="img\icons\social1.png" />
+    <Content Include="img\icons\tabs-icons.png" />
+    <Content Include="img\icons\_notes\dwsync.xml" />
+    <Content Include="img\index.html" />
+    <Content Include="img\Logo - 1.png" />
+    <Content Include="img\nern.png" />
+    <Content Include="img\portfolio\1.jpg" />
+    <Content Include="img\portfolio\10.jpg" />
+    <Content Include="img\portfolio\11-650x420.jpg" />
+    <Content Include="img\portfolio\16.jpg" />
+    <Content Include="img\portfolio\2.jpg" />
+    <Content Include="img\portfolio\3.jpg" />
+    <Content Include="img\portfolio\4.jpg" />
+    <Content Include="img\portfolio\5.jpg" />
+    <Content Include="img\portfolio\6.jpg" />
+    <Content Include="img\portfolio\7.jpg" />
+    <Content Include="img\portfolio\8.jpg" />
+    <Content Include="img\portfolio\9.jpg" />
+    <Content Include="img\portfolio\index.html" />
+    <Content Include="img\portfolio\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\contentPattern.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\index.html" />
+    <Content Include="img\prettyPhoto\dark_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\dark_rounded\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\dark_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\dark_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\dark_square\contentPattern.png" />
+    <Content Include="img\prettyPhoto\dark_square\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\dark_square\index.html" />
+    <Content Include="img\prettyPhoto\dark_square\loader.gif" />
+    <Content Include="img\prettyPhoto\dark_square\sprite.png" />
+    <Content Include="img\prettyPhoto\dark_square\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\default\default_thumb.png" />
+    <Content Include="img\prettyPhoto\default\index.html" />
+    <Content Include="img\prettyPhoto\default\loader.gif" />
+    <Content Include="img\prettyPhoto\default\sprite.png" />
+    <Content Include="img\prettyPhoto\default\sprite_next.png" />
+    <Content Include="img\prettyPhoto\default\sprite_prev.png" />
+    <Content Include="img\prettyPhoto\default\sprite_x.png" />
+    <Content Include="img\prettyPhoto\default\sprite_y.png" />
+    <Content Include="img\prettyPhoto\default\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\facebook\btnNext.png" />
+    <Content Include="img\prettyPhoto\facebook\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternBottom.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternLeft.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternRight.png" />
+    <Content Include="img\prettyPhoto\facebook\contentPatternTop.png" />
+    <Content Include="img\prettyPhoto\facebook\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\facebook\index.html" />
+    <Content Include="img\prettyPhoto\facebook\loader.gif" />
+    <Content Include="img\prettyPhoto\facebook\sprite.png" />
+    <Content Include="img\prettyPhoto\facebook\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\index.html" />
+    <Content Include="img\prettyPhoto\light_rounded\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_rounded\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_rounded\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\light_rounded\index.html" />
+    <Content Include="img\prettyPhoto\light_rounded\loader.gif" />
+    <Content Include="img\prettyPhoto\light_rounded\sprite.png" />
+    <Content Include="img\prettyPhoto\light_rounded\_notes\dwsync.xml" />
+    <Content Include="img\prettyPhoto\light_square\btnNext.png" />
+    <Content Include="img\prettyPhoto\light_square\btnPrevious.png" />
+    <Content Include="img\prettyPhoto\light_square\default_thumbnail.gif" />
+    <Content Include="img\prettyPhoto\light_square\index.html" />
+    <Content Include="img\prettyPhoto\light_square\loader.gif" />
+    <Content Include="img\prettyPhoto\light_square\sprite.png" />
+    <Content Include="img\prettyPhoto\light_square\_notes\dwsync.xml" />
+    <Content Include="img\sabt.png" />
+    <Content Include="img\sazandegi.png" />
+    <Content Include="img\Screenshot_2019-07-03 ثبت خبر جدید.png" />
+    <Content Include="img\Screenshot_2019-07-03 روزنامه سازندگی%281%29.png" />
+    <Content Include="img\slides\1.jpg" />
+    <Content Include="img\slides\2.jpg" />
+    <Content Include="img\slides\3.jpg" />
+    <Content Include="img\slides\4.jpg" />
+    <Content Include="img\slides\5.jpg" />
+    <Content Include="img\slides\6.jpg" />
+    <Content Include="img\slides\bg.jpg" />
+    <Content Include="img\slides\index.html" />
+    <Content Include="img\slides\stripe.png" />
+    <Content Include="img\slides\thumb1.jpg" />
+    <Content Include="img\slides\thumb2.jpg" />
+    <Content Include="img\slides\thumb3.jpg" />
+    <Content Include="img\slides\thumb4.jpg" />
+    <Content Include="img\slides\thumb5 %283%29.jpg" />
+    <Content Include="img\slides\thumb5.jpg" />
+    <Content Include="img\slides\tra1.png" />
+    <Content Include="img\slides\tra2.png" />
+    <Content Include="img\slides\tra3.png" />
+    <Content Include="img\slides\tra4.png" />
+    <Content Include="img\slides\tra5.png" />
+    <Content Include="img\slides\tra6.png" />
+    <Content Include="img\slides\_notes\dwsync.xml" />
+    <Content Include="img\template\bg.jpg" />
+    <Content Include="img\template\bg_direction_nav.png" />
+    <Content Include="img\template\btn_normal_left.png" />
+    <Content Include="img\template\btn_normal_right.png" />
+    <Content Include="img\template\bullets.jpg" />
+    <Content Include="img\template\flogo.png" />
+    <Content Include="img\template\footer.jpg" />
+    <Content Include="img\template\hover.png" />
+    <Content Include="img\template\index.html" />
+    <Content Include="img\template\light.png" />
+    <Content Include="img\template\loader.gif" />
+    <Content Include="img\template\logo%402x.png" />
+    <Content Include="img\template\logo.png" />
+    <Content Include="img\template\menu.png" />
+    <Content Include="img\template\menu2.png" />
+    <Content Include="img\template\menu3.png" />
+    <Content Include="img\template\quotebg.jpg" />
+    <Content Include="img\template\search-submit.png" />
+    <Content Include="img\template\select.png" />
+    <Content Include="img\template\slider-loader.gif" />
+    <Content Include="img\template\sliderbg.jpg" />
+    <Content Include="img\template\stripe.png" />
+    <Content Include="img\template\timer.png" />
+    <Content Include="img\template\transparent.png" />
+    <Content Include="img\template\triangle.png" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\index.html" />
+    <Content Include="js\jquery.themepunch.plugins.min.js" />
+    <Content Include="js\jquery.themepunch.revolution.min.js" />
+    <Content Include="js\jquery.tweet.js" />
+    <Content Include="js\libs\index.html" />
+    <Content Include="js\libs\jquery.js" />
+    <Content Include="js\libs\modernizr-2.0.6.min.js" />
+    <Content Include="js\libs\_notes\dwsync.xml" />
+    <Content Include="js\merged-scripts.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\_notes\dwsync.xml" />
     <Content Include="Views\Header.html" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -85,6 +327,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home.aspx.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Home.aspx.designer.cs">
+      <DependentUpon>Home.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MainMaster.Master.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MainMaster.Master.designer.cs">
+      <DependentUpon>MainMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Site1.Master.cs">
@@ -96,8 +352,36 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MainMaster.Master" />
+    <Content Include="css\fonts\bebasneue-webfont.eot" />
+    <Content Include="css\fonts\bebasneue-webfont.ttf" />
+    <Content Include="css\fonts\bebasneue-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont.eot" />
+    <Content Include="css\fonts\fontawesome-webfont.ttf" />
+    <Content Include="css\fonts\fontawesome-webfont.woff" />
+    <Content Include="css\fonts\fontawesome-webfont_162a16fe.eot" />
+    <Content Include="css\fonts\fontawesome-webfont_cdea7bb9.eot" />
+    <Content Include="css\fonts\fontawesome-webfont_cdea7bb9.woff" />
+    <Content Include="css\fonts\FontAwesome.otf" />
+    <Content Include="css\fonts\socialico-webfont.eot" />
+    <Content Include="css\fonts\socialico-webfont.ttf" />
+    <Content Include="css\fonts\socialico-webfont.woff" />
+    <Content Include="fonts\bbc-nassim-regular.ttf" />
+    <Content Include="fonts\BBCNassim.eot" />
+    <Content Include="fonts\BBCNassim.ttf" />
+    <Content Include="fonts\BBCNassim.woff" />
+    <Content Include="fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="fonts\W_YEKAN_0.TTF" />
+    <Content Include="fonts\yekan.eot" />
+    <Content Include="fonts\yekan.ttf" />
+    <Content Include="fonts\yekan.woff" />
+    <Content Include="img\template\DownloadPG - Click Me.reg" />
+    <Content Include="img\template\Downloadpg.url" />
     <None Include="packages.config" />
     <Content Include="Views\Site1.Master" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -107,6 +391,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="img\slides\db\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

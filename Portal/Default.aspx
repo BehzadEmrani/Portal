@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Portal.Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Portal.Default" Async="true" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" >
         <iframe  runat="server" ID="Iframe2" width="100%" height="170" style="border:none" src="~/Views/Header.html"></iframe>
 </asp:Content>

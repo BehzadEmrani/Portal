@@ -44,7 +44,7 @@ namespace Portal
             if (response.IsSuccessStatusCode)
             {
                 luser = await response.Content.ReadAsAsync<User>();
-                //                    Button1.Text = luser.Role1.ToString();// JsonConvert.DeserializeObject(data).ToString();
+                //        Button1.Text = luser.Role1.ToString();// JsonConvert.DeserializeObject(data).ToString();
             }
             else
             {
@@ -55,6 +55,7 @@ namespace Portal
             {
                 case 0:
                     Label1.Visible = true;
+                    Label1.Text = response.ToString();
                     Text1.Text = "";
                     break;
                 case 1:
