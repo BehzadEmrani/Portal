@@ -27,7 +27,7 @@ namespace Portal
             luser.Name = Text1.Text.Trim();
             luser.Pass = ComputeSha256Hash(Text1.Text.Trim() + Text2.Text.Trim());
             RecogniseUserAsync(luser);
-            Text1.Text = luser.Role1.ToString() + "????" + luser.Name;
+            //Text1.Text = luser.Role1.ToString() + "????" + luser.Name;
         }
         private async void RecogniseUserAsync(User luser)
         {
@@ -48,9 +48,9 @@ namespace Portal
             }
             else
             {
-                Button1.Text = "Failure";
+                Button1.Text = "Login Failed";
             }
-        Exit:;
+     //   Exit:;
             switch (luser.Role1)
             {
                 case 0:
