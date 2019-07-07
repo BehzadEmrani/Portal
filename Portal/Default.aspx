@@ -15,6 +15,7 @@
                     <asp:TextBox runat="server" ID="Text1" Width="100"></asp:TextBox>
                 </asp:TableCell>
             </asp:TableRow>
+
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Left" Width="50%">رمز عبور:</asp:TableCell>
                 <asp:TableCell HorizontalAlign="Right" Width="50%">
