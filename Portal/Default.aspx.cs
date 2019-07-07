@@ -14,7 +14,7 @@ using System.Security.Cryptography;
 
 namespace Portal
 {
-    public partial class Home : System.Web.UI.Page
+    public partial class Default : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,7 +31,7 @@ namespace Portal
             Text1.Text = luser.Role1.ToString() + "????" + luser.Name;
         }
 
-        private async void RecogniseUserAsync(User luser)
+                private async void RecogniseUserAsync(User luser)
         {
 
             //           goto Exit;
@@ -83,7 +83,7 @@ namespace Portal
             }
         }
 
-        static string ComputeSha256Hash(string rawData)
+                static string ComputeSha256Hash(string rawData)
         {
             // Create a SHA256   
             using (SHA256 sha256Hash = SHA256.Create())

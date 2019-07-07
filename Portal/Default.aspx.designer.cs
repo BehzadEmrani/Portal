@@ -10,7 +10,7 @@
 namespace Portal {
     
     
-    public partial class Home {
+    public partial class Default {
         
         /// <summary>
         /// Iframe2 control.
