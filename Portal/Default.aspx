@@ -24,6 +24,7 @@
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Center" Width="100%" ColumnSpan="2">
                      <asp:Button runat="server" ID="Button1" Text="ورود" width="100" OnClick="Button1_Click" class="nbtn black"></asp:Button>
+                      <asp:Button runat="server" ID="Button2" Text="ثبت سرور ها" width="100"  class="nbtn black"></asp:Button>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>
@@ -38,6 +39,7 @@
     
     <Items>
         <asp:MenuItem Text="سرورها" Value="0"  >
+        <asp:MenuItem Text=" ثبت سرورها" Value="0" Selected="True"></asp:MenuItem>
         <asp:MenuItem Text="سایت ها و برنامه ها" Value="0" ></asp:MenuItem>
         <asp:MenuItem Text="وظایف" Value="0" >
         </asp:MenuItem>
