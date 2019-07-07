@@ -154,9 +154,9 @@
 
 
             <section id="main" class="container" style="width: 80%">
-                <section id="homeSlider" class="revslider" data-speed="6000" data-height="300" style="height: 350px; align-self: center;">
-                    <div class="bannercontainer" style="background: transparent !important; height: 350px; align-self: center; align-content: center;">
-                        <div class="banner" style="height: 350px; align-self: center;">
+                <section id="homeSlider" class="revslider" data-speed="6000" data-height="300" style="height: 300px;" >
+                    <div class="bannercontainer" style="background: transparent !important; height: 300px;">
+                        <div class="banner" style="height: 300px; align-self: center;">
                             <ul>
                                 <!-- BOXFADE -->
 
@@ -204,30 +204,30 @@
 
 
 
-                                <%--                                <li data-transition="boxfade" data-slotamount="5">
+                                                                <li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/sazandegi.png">
                                     <div class="caption lft big_white" data-x="209" data-y="64" data-speed="900" data-start="900" data-easing="easeOutBack">
 
-طراحی سی ام اس خبری</div>--%>
+طراحی سی ام اس خبری</div>
 
 
                                 <%-- تصاویر روی هم --%>
-                                <%--                                    <div class="caption lfr" data-x="54" data-y="169" data-speed="1000" data-start="1200" data-easing="easeOutExpo">
-                                        <img src="img/sabt.png">
-                                    </div>--%>
-                                <%--                                    <div class="caption lfr" data-x="565" data-y="166" data-speed="1000" data-start="1600" data-easing="easeOutExpo">
-                                        <img src="img/sazandegi.png">
-                                    </div>--%>
-                                <%--                                    <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
-                                        <img src="img/slides/2.png">
-                                    </div>--%>
+                                                                    <div class="caption lfr" data-x="54" data-y="169" data-speed="1000" data-start="1200" data-easing="easeOutExpo">
+                                        <img src="img/saz.png">
+                                    </div>
+                                                                    <div class="caption lfr" data-x="565" data-y="166" data-speed="1000" data-start="1600" data-easing="easeOutExpo">
+                                        <%--<img src="img/saz.png">--%>
+                                    </div>
+                                                                    <div class="caption lfr" data-x="230" data-y="93" data-speed="1000" data-start="1400" data-easing="easeOutExpo">
+                                        <%--<img src="img/saz.png">--%>
+                                    </div>
 
-                                <%--</li>--%>
+                                </li>
 
 
 
                                 <%-- slider2 --%>
-                                <%--                                <li data-transition="boxfade" data-slotamount="5">
+                                                                <li data-transition="boxfade" data-slotamount="5">
                                     <img src="img/nern.png">
                                     <div class="caption lfr big_white" data-x="494" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
 
@@ -253,7 +253,7 @@
                                     <div class="caption lfr" data-x="654" data-y="-1" data-speed="400" data-start="1500" data-easing="easeOutExpo">
                                         <img src="img/slides/image0011.png">
                                     </div>
-                                </li>--%>
+                                </li>
 
 
 
@@ -264,10 +264,10 @@
 
                                 <li data-transition="fade" data-slotamount="5">
                                     <%--         <img src="img/template/transparent.png">--%>
-                                    <div class="caption lfr" data-x="359" data-y="26" data-speed="400" data-start="800" data-easing="easeOutExpo">
-                                        <img src="img/Logo - 1.png">
+                                    <div class="caption lfr" data-x="359" data-y="26" data-speed="400" data-start="800" data-easing="easeOutExpo" style="align-self:center">
+                                        <img src="img/Logo - 1.png"">
                                     </div>
-                                    <div class="caption lfb big_white" data-x="66" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack">
+                                    <div class="caption lfb big_white" data-x="66" data-y="140" data-speed="500" data-start="900" data-easing="easeOutBack" >
                                         سامانه های هوشمند   
                                         <br />
                                         سیمرغ
@@ -384,8 +384,8 @@
                     <div class="container" style="height: 30px;">
                         <div class="row-fluid">
                             <div class="span6" style="align-content: center">
-                                <a id="footer-logo" href="index.html">
-                                    <img src="img/Logo - 1.png" width="70px" />
+                                <a id="footer-logo" href="index.html" style="width:80px;">
+                                    <img src="img/Logo - 1.png" />
                                 </a>
                                 <p>
                                     کلیه حقوق این سایت برای توسعه دهنده محفوظ است.

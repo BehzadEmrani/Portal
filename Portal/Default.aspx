@@ -1,9 +1,13 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Site1.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Portal.Default" Async="true" %>
-<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server" >
-        <iframe  runat="server" ID="Iframe2" width="100%" height="170" style="border:none" src="~/Views/Header.html"></iframe>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMaster.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="Portal.Home" Async="true" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="CPHR" runat="server">
-    <asp:Panel runat="server" ID="Panel1" Width="100%" >
+
+
+
+     <iframe  runat="server" ID="Iframe2" width="100%" height="170" style="border:none" src="img/accountlogin-icon.png"></iframe>
+     <asp:Panel runat="server" ID="Panel1" Width="100%" >
         <asp:Table runat="server" ID="Table1" Width="100%">
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Left" Width="50%">نام کاربری:</asp:TableCell>
@@ -19,7 +23,7 @@
             </asp:TableRow>
             <asp:TableRow>
                 <asp:TableCell HorizontalAlign="Center" Width="100%" ColumnSpan="2">
-                     <asp:Button runat="server" ID="Button1" Text="ورود" width="100" OnClick="Button1_Click"></asp:Button>
+                     <asp:Button runat="server" ID="Button1" Text="ورود" width="100" OnClick="Button1_Click" class="nbtn black"></asp:Button>
                 </asp:TableCell>
             </asp:TableRow>
             <asp:TableRow>

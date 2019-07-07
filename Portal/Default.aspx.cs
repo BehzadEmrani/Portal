@@ -14,12 +14,13 @@ using System.Security.Cryptography;
 
 namespace Portal
 {
-    public partial class Default : System.Web.UI.Page
+    public partial class Home : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             var luser = new User();
@@ -27,8 +28,9 @@ namespace Portal
             luser.Name = Text1.Text.Trim();
             luser.Pass = ComputeSha256Hash(Text1.Text.Trim() + Text2.Text.Trim());
             RecogniseUserAsync(luser);
-            //Text1.Text = luser.Role1.ToString() + "????" + luser.Name;
+            Text1.Text = luser.Role1.ToString() + "????" + luser.Name;
         }
+
         private async void RecogniseUserAsync(User luser)
         {
 
@@ -48,9 +50,9 @@ namespace Portal
             }
             else
             {
-                Button1.Text = "Login Failed";
+                Button1.Text = "Failure";
             }
-     //   Exit:;
+        Exit:;
             switch (luser.Role1)
             {
                 case 0:
@@ -80,6 +82,7 @@ namespace Portal
                     break;
             }
         }
+
         static string ComputeSha256Hash(string rawData)
         {
             // Create a SHA256   
@@ -97,5 +100,11 @@ namespace Portal
                 return builder.ToString();
             }
         }
+
+
+
+
+
+
     }
 }
