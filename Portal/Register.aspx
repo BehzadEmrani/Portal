@@ -29,7 +29,7 @@
     <br />
     <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" OnClick="Button_Click"/>
     <br />
-    <asp:Label ID="Label8" runat="server" Text="خطا" Visible="false"></asp:Label>
+    <asp:Label ID="Label8" runat="server" Text="ثبت نام با موفقیت انجام شد" Visible="false"></asp:Label>
 
 
 </asp:Content>

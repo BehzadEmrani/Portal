@@ -50,6 +50,29 @@ namespace Portal
 
             if (response.IsSuccessStatusCode)
             {
+
+                if(luser.UserName== "Repeated")
+                {
+                    Label8.Text = "نام کاربری تکراری است.";
+                    Label8.Visible = true;
+
+                }
+
+                else if (luser.NationalId== "Registered")
+                {
+                    Label8.Text = "شما قبلا ثبت نام کرده اید!";
+                    Label8.Visible = true;
+                }
+
+                txtName.Text = "";
+                txtNi.Text = "";
+                txtAge.Text = "";
+                txtPersonId.Text = "";
+                txtTel.Text = "";
+                txtUserName.Text = "";
+                txtPassword.Text = "";
+                Label8.Visible = true;
+
                 luser = await response.Content.ReadAsAsync<Person>();
 
                // Label8.Visible = true;
