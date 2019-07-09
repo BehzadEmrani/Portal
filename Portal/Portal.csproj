@@ -133,6 +133,8 @@
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="FrmAddServer.aspx" />
+    <Content Include="FrmDropDown.aspx" />
     <Content Include="FrmServer.aspx" />
     <Content Include="Global.asax" />
     <Content Include="img\accountlogin-icon.png" />
@@ -305,6 +307,8 @@
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\index.html" />
+    <Content Include="js\jquery-migrate-3.0.1.js" />
+    <Content Include="js\jquery-migrate-3.0.1.min.js" />
     <Content Include="js\jquery.themepunch.plugins.min.js" />
     <Content Include="js\jquery.themepunch.revolution.min.js" />
     <Content Include="js\jquery.tweet.js" />
@@ -326,6 +330,20 @@
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
     </Compile>
+    <Compile Include="FrmAddServer.aspx.cs">
+      <DependentUpon>FrmAddServer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmAddServer.aspx.designer.cs">
+      <DependentUpon>FrmAddServer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FrmDropDown.aspx.cs">
+      <DependentUpon>FrmDropDown.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FrmDropDown.aspx.designer.cs">
+      <DependentUpon>FrmDropDown.aspx</DependentUpon>
+    </Compile>
     <Compile Include="FrmServer.aspx.cs">
       <DependentUpon>FrmServer.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -343,6 +361,8 @@
     <Compile Include="MainMaster.Master.designer.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>
     </Compile>
+    <Compile Include="Models\hardware_information.cs" />
+    <Compile Include="Models\server.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Site1.Master.cs">

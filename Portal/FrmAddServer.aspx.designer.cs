@@ -10,7 +10,7 @@
 namespace Portal {
     
     
-    public partial class FrmServer {
+    public partial class FrmAddServer {
         
         /// <summary>
         /// Panel1 control.
@@ -31,130 +31,85 @@ namespace Portal {
         protected global::System.Web.UI.WebControls.Table Table1;
         
         /// <summary>
-        /// txtnumber control.
+        /// txtservername control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtnumber;
+        protected global::System.Web.UI.WebControls.TextBox txtservername;
         
         /// <summary>
-        /// txtmodel control.
+        /// txtlocation control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmodel;
+        protected global::System.Web.UI.WebControls.TextBox txtlocation;
         
         /// <summary>
-        /// txttolid control.
+        /// txtserverrole control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txttolid;
+        protected global::System.Web.UI.WebControls.TextBox txtserverrole;
         
         /// <summary>
-        /// txtsefaresh control.
+        /// txtserialnamber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtsefaresh;
+        protected global::System.Web.UI.WebControls.TextBox txtserialnamber;
         
         /// <summary>
-        /// txtengheza control.
+        /// txtassesttagnumber control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtengheza;
+        protected global::System.Web.UI.WebControls.TextBox txtassesttagnumber;
         
         /// <summary>
-        /// txtposhtibani control.
+        /// txtdatepurchased control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtposhtibani;
+        protected global::System.Web.UI.WebControls.TextBox txtdatepurchased;
         
         /// <summary>
-        /// txtos control.
+        /// txtpurchaseorder control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtos;
+        protected global::System.Web.UI.WebControls.TextBox txtpurchaseorder;
         
         /// <summary>
-        /// txtram control.
+        /// txttechsuport control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtram;
+        protected global::System.Web.UI.WebControls.TextBox txttechsuport;
         
         /// <summary>
-        /// txtcpu control.
+        /// ddliranganj control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtcpu;
-        
-        /// <summary>
-        /// txtspeedcpu control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtspeedcpu;
-        
-        /// <summary>
-        /// txthard control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txthard;
-        
-        /// <summary>
-        /// txtvideocard control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtvideocard;
-        
-        /// <summary>
-        /// txtvoisecard control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtvoisecard;
-        
-        /// <summary>
-        /// txtmonitor control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtmonitor;
+        protected global::System.Web.UI.WebControls.DropDownList ddliranganj;
         
         /// <summary>
         /// Button2 control.
@@ -164,14 +119,5 @@ namespace Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button2;
-        
-        /// <summary>
-        /// Label1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
     }
 }

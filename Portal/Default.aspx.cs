@@ -21,6 +21,13 @@ namespace Portal
 
         }
 
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("FrmServer.aspx");
+
+        }
+
+
         protected void Button1_Click(object sender, EventArgs e)
         {
             var luser = new User();
