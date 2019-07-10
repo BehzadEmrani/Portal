@@ -28,10 +28,12 @@
 	#homeSlider, .bannercontainer, .banner{
 		height: 348px !important;
 		width: 740px;
+        align-self:center;
 	}
 	
 	#homeSlider .banner .big_white{
 		font-size: 25px !important;
+        
 	}
 	
 	
