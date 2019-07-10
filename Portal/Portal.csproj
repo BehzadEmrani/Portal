@@ -301,12 +301,14 @@
     <Content Include="img\template\timer.png" />
     <Content Include="img\template\transparent.png" />
     <Content Include="img\template\triangle.png" />
+    <Content Include="index.aspx" />
     <Content Include="js\bootstrap.js" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\index.html" />
     <Content Include="js\jquery.themepunch.plugins.min.js" />
     <Content Include="js\jquery.themepunch.revolution.min.js" />
     <Content Include="js\jquery.tweet.js" />
+    <Content Include="js\jssor.slider-27.5.0.min.js" />
     <Content Include="js\libs\index.html" />
     <Content Include="js\libs\jquery.js" />
     <Content Include="js\libs\modernizr-2.0.6.min.js" />
@@ -327,6 +329,13 @@
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="index.aspx.cs">
+      <DependentUpon>index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="index.aspx.designer.cs">
+      <DependentUpon>index.aspx</DependentUpon>
     </Compile>
     <Compile Include="MainMaster.Master.cs">
       <DependentUpon>MainMaster.Master</DependentUpon>

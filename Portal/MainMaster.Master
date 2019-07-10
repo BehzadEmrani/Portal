@@ -1,3 +1,21 @@
+﻿Skip to content
+ 
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@Mandana70 
+0
+0 0 BehzadEmrani/Portal
+ Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
+Portal/Portal/MainMaster.Master
+ Mandana changes in Slider
+4ef8ca2 7 hours ago
+452 lines (383 sloc)  21.3 KB
+    
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Portal.MainMaster" %>
 
 <!DOCTYPE html>
@@ -449,3 +467,4 @@
     </body>
 
 </html>
+
