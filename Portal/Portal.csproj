@@ -140,6 +140,12 @@
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="img\011.jpg" />
+    <Content Include="img\012.jpg" />
+    <Content Include="img\013.jpg" />
+    <Content Include="img\014.jpg" />
+    <Content Include="img\015.jpg" />
+    <Content Include="img\016.jpg" />
     <Content Include="img\accountlogin-icon.png" />
     <Content Include="img\assets\a1.jpg" />
     <Content Include="img\assets\a2.jpg" />
@@ -313,6 +319,7 @@
     <Content Include="js\jquery.themepunch.plugins.min.js" />
     <Content Include="js\jquery.themepunch.revolution.min.js" />
     <Content Include="js\jquery.tweet.js" />
+    <Content Include="js\jssor.slider-27.5.0.min.js" />
     <Content Include="js\libs\index.html" />
     <Content Include="js\libs\jquery.js" />
     <Content Include="js\libs\modernizr-2.0.6.min.js" />

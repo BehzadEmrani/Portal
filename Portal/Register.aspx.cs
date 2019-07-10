@@ -31,39 +31,47 @@ namespace Portal
             luser.UserName = txtUserName.Text.Trim();
             luser.Password = txtPassword.Text.Trim();
 
-      
-             RecognisePersonAsync(luser);
-        
+
+           
+            RecognisePersonAsync(luser);
+
+
         }
         private async void RecognisePersonAsync(Person luser)
         {
 
-       
+            
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost/api/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             var response = client.PostAsJsonAsync("api/PersonCTR/", luser).Result;
 
-          //  Label8.Visible = true;
+
+
+            
 
 
             if (response.IsSuccessStatusCode)
             {
 
-                if(luser.UserName== "Repeated")
+
+                luser = await response.Content.ReadAsAsync<Person>();
+                //Label8.Text = luser.NationalId;
+                //Label8.Visible = true;
+                //goto exit;
+                if (luser.UserName == "Repeated")
                 {
-                    Label8.Text = "نام کاربری تکراری است.";
+                    Label8.Text = "نام کاربری تکراری";
                     Label8.Visible = true;
-
+                    goto exit;
                 }
-
-                else if (luser.NationalId== "Registered")
+                if (luser.NationalId == "Registerd")
                 {
-                    Label8.Text = "شما قبلا ثبت نام کرده اید!";
+                    Label8.Text = "این کاربر قبلا ثبت شده است";
                     Label8.Visible = true;
+                    goto exit;
                 }
-
                 txtName.Text = "";
                 txtNi.Text = "";
                 txtAge.Text = "";
@@ -71,20 +79,46 @@ namespace Portal
                 txtTel.Text = "";
                 txtUserName.Text = "";
                 txtPassword.Text = "";
+
                 Label8.Visible = true;
 
-                luser = await response.Content.ReadAsAsync<Person>();
 
-               // Label8.Visible = true;
-              //  Label8.Text = "OK";
-            }
-            else
-            {
-                Button.Text = "Failure";
+        
 
+           
             }
-   
-            
+
+            //else
+            //{
+
+            //    Label8.Text = "خطایی در ثبت نام وجود دارد.";
+            //    Label8.Visible = true;
+
+            //}
+
+            //lbl.Visible = true;
+
+
+
+            //if (luser.UserName == "Repeated")
+            //{
+            //    Label8.Text = "نام کاربری تکراری است.";
+            //    Label8.Visible = true;
+            //    lbl.Visible = true;
+
+            //    lbl.Text = luser.UserName;
+      
+            //}
+
+            //else if (luser.NationalId == "Registered")
+            //{
+            //    Label8.Text = "شما قبلا ثبت نام کرده اید!";
+            //    Label8.Visible = true;
+            //}
+
+
+        exit:;
+
         }
 
 

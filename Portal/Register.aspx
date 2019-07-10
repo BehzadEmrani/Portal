@@ -6,31 +6,118 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="CPHC" runat="server">
 
-    <asp:Label ID="Label1" runat="server" Text="نام"></asp:Label>
-    <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label2" runat="server" Text="کدملی"></asp:Label>
-    <asp:TextBox ID="txtNi" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label3" runat="server" Text="سن"></asp:Label>
-    <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label4" runat="server" Text="کد پرسنلی"></asp:Label>
-    <asp:TextBox ID="txtPersonId" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label5" runat="server" Text="شماره تلفن"></asp:Label>
-    <asp:TextBox ID="txtTel" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label6" runat="server" Text="نام کاربری"></asp:Label>
-    <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
-    <br />
-    <asp:Label ID="Label7" runat="server" Text="کلمه عبور "></asp:Label>
-    <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
-    <br />
-    <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" OnClick="Button_Click"/>
-    <br />
-    <asp:Label ID="Label8" runat="server" Text="ثبت نام با موفقیت انجام شد" Visible="false"></asp:Label>
+    
+    <div style="padding-top:30px">
 
+    
+
+    <asp:Table runat="server" >
+
+        <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label1" runat="server" Text="نام"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+        
+
+                <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label2" runat="server" Text="کدملی"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtNi" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+
+        <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label3" runat="server" Text="سن"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+
+
+                <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label4" runat="server" Text="کد پرسنلی"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtPersonId" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+
+      <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label5" runat="server" Text="شماره تلفن"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtTel" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+
+              <asp:TableFooterRow>
+
+            <asp:TableCell>
+        <asp:Label ID="Label6" runat="server" Text="نام کاربری"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+               <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+
+              <asp:TableFooterRow>
+
+            <asp:TableCell>
+                <asp:Label ID="Label7" runat="server" Text="کلمه عبور "></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+               <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
+        </asp:TableFooterRow>
+            
+          <asp:TableFooterRow HorizontalAlign="Center">
+            <asp:TableCell HorizontalAlign="Center" >
+               <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" OnClick="Button_Click"/>
+            </asp:TableCell>
+        </asp:TableFooterRow>
+
+
+        <asp:TableFooterRow>
+            <asp:TableCell>
+               <asp:Label ID="Label8" runat="server" Text="ثبت نام با موفقیت انجام شد" Visible="false"></asp:Label>
+            </asp:TableCell>
+        </asp:TableFooterRow>
+
+    </asp:Table>
+
+    <asp:Label ID="lbl" runat="server" Text="رسید" Visible="false"></asp:Label>
+
+   
+    </div>
 
 </asp:Content>
 
