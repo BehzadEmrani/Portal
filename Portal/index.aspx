@@ -84,7 +84,8 @@ Bellum حق بیمه وردپرس
                         <div class="clear"></div>
                         <div class="double-line" style="margin-top: 10px; margin-bottom: 10px;"></div>
                         <section class="recent-works">
-                            <h3>آثار</h3><a class="more" href="index.html#">
+                          <%--  <h3>آثار</h3>--%>
+                            <a class="more" href="index.html#">
 نمونه کارها ما +
 </a>
                             <div class="clear"></div>
@@ -93,7 +94,7 @@ Bellum حق بیمه وردپرس
                                     <a href="portfolio-single-1.html">
                                         <div class="post-thumbnail">
                                             <div class="plus">+</div> <span class="hover color-hover"></span> 
-                                            <img src="img/portfolio/2.jpg" alt="" width="650" height="420" />
+                                            <img src="img/sazandegi.png" alt="" width="650" height="420" />
                                         </div>
                                         <!-- end post-thumbnail -->
                                          <h3 class="project-title post-title">
@@ -106,7 +107,7 @@ Bellum حق بیمه وردپرس
                                     <a rel="lightbox[gallery2]" href="img/portfolio/3.jpg">
                                         <div class="post-thumbnail">
                                             <div class="plus">+</div> <span class="hover color-hover"></span> 
-                                            <img src="img/portfolio/3.jpg" alt="" width="650" height="420" />
+                                            <img src="img/sazandegi.png" alt="" width="650" height="420" />
                                         </div>
                                         <!-- end post-thumbnail -->
                                          <h3 class="project-title post-title">
@@ -122,7 +123,7 @@ Bellum حق بیمه وردپرس
                                     <a href="http://www.google.com">
                                         <div class="post-thumbnail">
                                             <div class="plus">+</div> <span class="hover color-hover"></span> 
-                                            <img src="img/portfolio/4.jpg" alt="" width="650" height="420" />
+                                            <img src="img/sazandegi.png" alt="" width="650" height="420" />
                                         </div>
                                         <!-- end post-thumbnail -->
                                          <h3 class="project-title post-title">
@@ -137,12 +138,12 @@ Bellum حق بیمه وردپرس
                                     <a href="portfolio-single-1.html">
                                         <div class="post-thumbnail">
                                             <div class="plus">+</div> <span class="hover color-hover"></span> 
-                                            <img src="img/portfolio/7.jpg" alt="" width="650" height="420" />
+                                            <img src="img/sazandegi.png" alt="" width="650" height="420" />
                                         </div>
                                         <!-- end post-thumbnail -->
                                          <h3 class="project-title post-title">
 
-زیبا پوست قهوه ای
+سایت سازندگی
 </h3>  <span class="georgia project-categories">
 انیمیشن طراحی وب سایت
 </span> 

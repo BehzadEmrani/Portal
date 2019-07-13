@@ -1,20 +1,4 @@
-﻿Skip to content
- 
-Search or jump to…
-
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@Mandana70 
-0
-0 0 BehzadEmrani/Portal
- Code  Issues 0  Pull requests 0  Projects 0  Wiki  Security  Insights
-Portal/Portal/MainMaster.Master
- Mandana changes in Slider
-4ef8ca2 7 hours ago
-452 lines (383 sloc)  21.3 KB
+﻿
     
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainMaster.master.cs" Inherits="Portal.MainMaster" %>
 
@@ -154,7 +138,7 @@ Portal/Portal/MainMaster.Master
                             </ul>--%>
                         <%--    </li>--%>
                         <!-- Contact -->
-                        <li><a href="">تماس با ما</a>
+                        <li><a href="#">تماس با ما</a>
 
                             <ul class="dropdown-menu">
                                 <li><a href="PhoneNumber.aspx">شماره تماس </a>
@@ -284,7 +268,7 @@ Portal/Portal/MainMaster.Master
             </div>
           
             <div>
-                <img data-u="image" src="img/010.jpg" />
+                <img data-u="image" src="img/seemorgh.png" />
             </div>
            
           
@@ -417,7 +401,7 @@ Portal/Portal/MainMaster.Master
                     <div class="container" style="height: 30px;">
                         <div class="row-fluid">
                             <div class="span6" style="align-content: center">
-                                <a id="footer-logo" href="index.html" style="width:80px;">
+                                <a id="footer-logo" href="#" style="width:80px;">
                                     <img src="img/Logo - 1.png" />
                                 </a>
                                 <p>
