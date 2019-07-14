@@ -73,6 +73,7 @@ namespace Portal
                     goto exit;
                 }
 
+
                 txtName.Text = "";
                 txtNi.Text = "";
                 txtAge.Text = "";
