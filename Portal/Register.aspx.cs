@@ -21,18 +21,18 @@ namespace Portal
         {
 
             var luser = new Person();
-  
+
 
             luser.Name = txtName.Text.Trim();
             luser.NationalId = txtNi.Text.Trim();
-            luser.Age =  txtAge.Text.Trim();
+            luser.Age = txtAge.Text.Trim();
             luser.PersonalCode = txtPersonId.Text.Trim();
             luser.PhoneNumber = txtTel.Text.Trim();
             luser.UserName = txtUserName.Text.Trim();
             luser.Password = txtPassword.Text.Trim();
 
 
-           
+
             RecognisePersonAsync(luser);
 
 
@@ -40,7 +40,7 @@ namespace Portal
         private async void RecognisePersonAsync(Person luser)
         {
 
-            
+
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost/api/");
             client.DefaultRequestHeaders.Accept.Clear();
@@ -49,7 +49,7 @@ namespace Portal
 
 
 
-            
+
 
 
             if (response.IsSuccessStatusCode)
@@ -72,6 +72,7 @@ namespace Portal
                     Label8.Visible = true;
                     goto exit;
                 }
+
                 txtName.Text = "";
                 txtNi.Text = "";
                 txtAge.Text = "";
@@ -82,39 +83,8 @@ namespace Portal
 
                 Label8.Visible = true;
 
-
-        
-
-           
             }
 
-            //else
-            //{
-
-            //    Label8.Text = "خطایی در ثبت نام وجود دارد.";
-            //    Label8.Visible = true;
-
-            //}
-
-            //lbl.Visible = true;
-
-
-
-            //if (luser.UserName == "Repeated")
-            //{
-            //    Label8.Text = "نام کاربری تکراری است.";
-            //    Label8.Visible = true;
-            //    lbl.Visible = true;
-
-            //    lbl.Text = luser.UserName;
-      
-            //}
-
-            //else if (luser.NationalId == "Registered")
-            //{
-            //    Label8.Text = "شما قبلا ثبت نام کرده اید!";
-            //    Label8.Visible = true;
-            //}
 
 
         exit:;
