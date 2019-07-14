@@ -109,12 +109,13 @@
         <asp:TableFooterRow>
             <asp:TableCell>
                <asp:Label ID="Label8" runat="server" Text="ثبت نام با موفقیت انجام شد" Visible="false"></asp:Label>
+                <asp:Label ID="Label9" runat="server" Text="id" Visible="false"></asp:Label>
             </asp:TableCell>
         </asp:TableFooterRow>
 
     </asp:Table>
 
-    <asp:Label ID="lbl" runat="server" Text="رسید" Visible="false"></asp:Label>
+
 
    
     </div>

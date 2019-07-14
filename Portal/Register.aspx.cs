@@ -51,28 +51,31 @@ namespace Portal
 
 
 
-
             if (response.IsSuccessStatusCode)
             {
 
 
                 luser = await response.Content.ReadAsAsync<Person>();
-                //Label8.Text = luser.NationalId;
-                //Label8.Visible = true;
+                //Label9.Text = luser.NationalId;
+                //Label9.Visible = true;
                 //goto exit;
                 if (luser.UserName == "Repeated")
                 {
+
+
                     Label8.Text = "نام کاربری تکراری";
                     Label8.Visible = true;
                     goto exit;
                 }
+
+
                 if (luser.NationalId == "Registerd")
                 {
+
                     Label8.Text = "این کاربر قبلا ثبت شده است";
                     Label8.Visible = true;
                     goto exit;
                 }
-
 
                 txtName.Text = "";
                 txtNi.Text = "";
