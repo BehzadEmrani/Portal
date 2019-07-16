@@ -11,7 +11,7 @@
 
     
 
-    <asp:Table runat="server" >
+    <asp:Table runat="server">
 
         <asp:TableFooterRow>
 
@@ -23,10 +23,24 @@
                 <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
             </asp:TableCell>
 
+
+            <asp:TableCell Width="10px"></asp:TableCell>
+
+
+            <asp:TableCell>
+                <asp:Label ID="Label10" runat="server" Text=" نام خانوادگی"></asp:Label>
+            </asp:TableCell>
+
+            <asp:TableCell>
+                <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox>
+            </asp:TableCell>
+
         </asp:TableFooterRow>
         
 
-                <asp:TableFooterRow>
+
+
+        <asp:TableFooterRow>
 
             <asp:TableCell>
                 <asp:Label ID="Label2" runat="server" Text="کدملی"></asp:Label>
@@ -36,9 +50,9 @@
                 <asp:TextBox ID="txtNi" runat="server"></asp:TextBox>
             </asp:TableCell>
 
-        </asp:TableFooterRow>
 
-        <asp:TableFooterRow>
+   <asp:TableCell Width="10px"></asp:TableCell>
+
 
             <asp:TableCell>
                 <asp:Label ID="Label3" runat="server" Text="سن"></asp:Label>
@@ -51,7 +65,9 @@
         </asp:TableFooterRow>
 
 
-                <asp:TableFooterRow>
+
+
+       <asp:TableFooterRow>
 
             <asp:TableCell>
                 <asp:Label ID="Label4" runat="server" Text="کد پرسنلی"></asp:Label>
@@ -61,11 +77,11 @@
                 <asp:TextBox ID="txtPersonId" runat="server"></asp:TextBox>
             </asp:TableCell>
 
-        </asp:TableFooterRow>
 
-      <asp:TableFooterRow>
+            <asp:TableCell Width="10px"></asp:TableCell>
 
-            <asp:TableCell>
+
+           <asp:TableCell>
                 <asp:Label ID="Label5" runat="server" Text="شماره تلفن"></asp:Label>
             </asp:TableCell>
 
@@ -73,21 +89,24 @@
                 <asp:TextBox ID="txtTel" runat="server"></asp:TextBox>
             </asp:TableCell>
 
+
         </asp:TableFooterRow>
 
-              <asp:TableFooterRow>
+      
+
+         <asp:TableFooterRow>
 
             <asp:TableCell>
-        <asp:Label ID="Label6" runat="server" Text="نام کاربری"></asp:Label>
+            <asp:Label ID="Label6" runat="server" Text="نام کاربری"></asp:Label>
             </asp:TableCell>
 
             <asp:TableCell>
                <asp:TextBox ID="txtUserName" runat="server"></asp:TextBox>
             </asp:TableCell>
 
-        </asp:TableFooterRow>
 
-              <asp:TableFooterRow>
+            <asp:TableCell Width="10px"></asp:TableCell>
+
 
             <asp:TableCell>
                 <asp:Label ID="Label7" runat="server" Text="کلمه عبور "></asp:Label>
@@ -97,13 +116,11 @@
                <asp:TextBox ID="txtPassword" runat="server"></asp:TextBox>
             </asp:TableCell>
 
-        </asp:TableFooterRow>
+            </asp:TableFooterRow>
+
+         
             
-          <asp:TableFooterRow HorizontalAlign="Center">
-            <asp:TableCell HorizontalAlign="Center" >
-               <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" OnClick="Button_Click"/>
-            </asp:TableCell>
-        </asp:TableFooterRow>
+
 
 
         <asp:TableFooterRow>
@@ -114,6 +131,16 @@
         </asp:TableFooterRow>
 
     </asp:Table>
+
+        <asp:Table ID="tb" runat="server" HorizontalAlign="Center">
+
+         <asp:TableFooterRow HorizontalAlign="Center">
+            <asp:TableCell HorizontalAlign="Center" >
+               <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" style="text-align:center;" OnClick="Button_Click"/>
+            </asp:TableCell>
+        </asp:TableFooterRow>
+
+        </asp:Table>
 
 
 

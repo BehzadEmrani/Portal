@@ -24,6 +24,7 @@ namespace Portal
 
 
             luser.Name = txtName.Text.Trim();
+            luser.LastName = txtLastName.Text.Trim();
             luser.NationalId = txtNi.Text.Trim();
             luser.Age = txtAge.Text.Trim();
             luser.PersonalCode = txtPersonId.Text.Trim();
@@ -78,6 +79,7 @@ namespace Portal
                 }
 
                 txtName.Text = "";
+                txtLastName.Text = "";
                 txtNi.Text = "";
                 txtAge.Text = "";
                 txtPersonId.Text = "";
@@ -86,9 +88,16 @@ namespace Portal
                 txtPassword.Text = "";
 
                 Label8.Visible = true;
+                //txtLastName.Text = luser.LastName;
+                //txtName.Text = luser.Name;
 
             }
+            else
+            {
+                Label8.Text = "لطفا صحت اطلاعات شخصی خود را مجددا چک کنید";
+                Label8.Visible = true;
 
+            }
 
 
         exit:;
