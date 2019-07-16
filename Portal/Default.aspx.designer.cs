@@ -13,13 +13,13 @@ namespace Portal {
     public partial class Default {
         
         /// <summary>
-        /// Iframe2 control.
+        /// Iframe1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe Iframe2;
+        protected global::System.Web.UI.HtmlControls.HtmlIframe Iframe1;
         
         /// <summary>
         /// Panel1 control.
@@ -31,13 +31,13 @@ namespace Portal {
         protected global::System.Web.UI.WebControls.Panel Panel1;
         
         /// <summary>
-        /// Table1 control.
+        /// Label2 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Table Table1;
+        protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
         /// Text1 control.
@@ -49,6 +49,15 @@ namespace Portal {
         protected global::System.Web.UI.WebControls.TextBox Text1;
         
         /// <summary>
+        /// Label3 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label3;
+        
+        /// <summary>
         /// Text2 control.
         /// </summary>
         /// <remarks>
@@ -56,6 +65,15 @@ namespace Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox Text2;
+        
+        /// <summary>
+        /// tb control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Table tb;
         
         /// <summary>
         /// Button1 control.
@@ -92,14 +110,5 @@ namespace Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Menu Menu1;
-        
-        /// <summary>
-        /// Iframe1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlIframe Iframe1;
     }
 }

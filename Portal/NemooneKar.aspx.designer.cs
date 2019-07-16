@@ -11,7 +11,7 @@ namespace Portal
 {
 
 
-    public partial class PhoneNumber
+    public partial class NemooneKar
     {
     }
 }
