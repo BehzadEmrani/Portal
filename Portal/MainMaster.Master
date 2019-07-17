@@ -103,7 +103,7 @@
                         <li><a href="Default.aspx">ورود کاربران</a>
                         </li>
                         <!-- Portfolio -->
-                        <li data-dropdown="dropdown"><a href="http://localhost:60838/NemooneKar.aspx" class="dropdown-toggle" data-target="#">نمونه کار</a>
+                        <li data-dropdown="dropdown"><a href="Samples.aspx" class="dropdown-toggle" data-target="#">نمونه کارها</a>
                             <%--<ul class="dropdown-menu">
                                 <li><a href="portfolio-3.html">سه ستون</a>
                                 </li>

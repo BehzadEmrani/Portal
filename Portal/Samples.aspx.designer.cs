@@ -11,7 +11,7 @@ namespace Portal
 {
 
 
-    public partial class NemooneKar
+    public partial class Samples
     {
     }
 }

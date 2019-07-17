@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Portal
 {
-    public partial class NemooneKar : System.Web.UI.Page
+    public partial class Samples : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
