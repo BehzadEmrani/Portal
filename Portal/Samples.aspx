@@ -166,8 +166,8 @@
                             <div class="pagination_links">
                                 <div class="visible-desktop visible-tablet">
                                     <div class='numbers-pag'><a class='numbered prev' href='#'><span>
-Previous</span></a><a class='numbered current-page' href='#'><span class='current'>1</span></a><a class='numbered inactive' href='#'><span>2</span></a><a class='numbered inactive' href='#'><span>3
-</span></a><a class='numbered next' href='page/2/index.html'><span>Next</span></a>
+                                        Previous</span></a><a class='numbered current-page' href='#'><span class='current'>1</span></a><a class='numbered inactive' href='#'><span>2</span></a><a class='numbered inactive' href='#'><span>3
+                                        </span></a><a class='numbered next' href='page/2/index.html'><span>Next</span></a>
                                     </div>
                                 </div>
                             </div>
