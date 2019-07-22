@@ -37,27 +37,13 @@ namespace Portal
             luser.PhoneNumber = txtTel.Text.Trim();
             luser.UserName = txtUserName.Text.Trim();
             luser.Password = txtPassword.Text.Trim();
-            luser.Active = "1";
+
+
 
             RecognisePersonAsync(luser);
 
-        }
-
-
-        protected void Editbtn_Click(object sender, EventArgs e)
-        {
-            Label9.Text = "کاربر با موفقیت حذف شد";
-            Label9.Visible = true;
-
-
-
 
         }
-
-
-
-        //Register
-
         private async void RecognisePersonAsync(Person luser)
         {
 
@@ -117,8 +103,6 @@ namespace Portal
                 Label8.Visible = true;
 
             }
-
-            //End of register
 
 
         exit:;
