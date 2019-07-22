@@ -12,10 +12,16 @@ namespace Portal
 {
     public partial class Register : System.Web.UI.Page
     {
+
+
+
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
+
+
+
 
         protected void Button_Click(object sender, EventArgs e)
         {
@@ -31,13 +37,27 @@ namespace Portal
             luser.PhoneNumber = txtTel.Text.Trim();
             luser.UserName = txtUserName.Text.Trim();
             luser.Password = txtPassword.Text.Trim();
-
-
+            luser.Active = "1";
 
             RecognisePersonAsync(luser);
 
+        }
+
+
+        protected void Editbtn_Click(object sender, EventArgs e)
+        {
+            Label9.Text = "کاربر با موفقیت حذف شد";
+            Label9.Visible = true;
+
+
+
 
         }
+
+
+
+        //Register
+
         private async void RecognisePersonAsync(Person luser)
         {
 
@@ -47,7 +67,6 @@ namespace Portal
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
             var response = client.PostAsJsonAsync("api/PersonCTR/", luser).Result;
-
 
 
 
@@ -98,6 +117,8 @@ namespace Portal
                 Label8.Visible = true;
 
             }
+
+            //End of register
 
 
         exit:;
