@@ -137,6 +137,7 @@
     <Content Include="css\style.css" />
     <Content Include="css\_notes\dwsync.xml" />
     <Content Include="Default.aspx" />
+    <Content Include="DeletePerson.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -338,6 +339,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DeletePerson.aspx.cs">
+      <DependentUpon>DeletePerson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DeletePerson.aspx.designer.cs">
+      <DependentUpon>DeletePerson.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
