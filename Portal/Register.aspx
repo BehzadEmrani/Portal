@@ -147,7 +147,7 @@
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
-                    <asp:Button ID="Editbtn" runat="server" Text="حذف" class="nbtn black" Style="text-align: center;" OnClick="Button_Click" />
+                    <asp:Button ID="Editbtn" runat="server" Text="حذف" class="nbtn black" Style="text-align: center;" />
                 </asp:TableCell>
             </asp:TableFooterRow>
 

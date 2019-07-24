@@ -8,6 +8,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using System.Security.Cryptography;
+
 namespace Portal
 {
     public partial class Register : System.Web.UI.Page
@@ -93,8 +95,7 @@ namespace Portal
                 txtPassword.Text = "";
 
                 Label8.Visible = true;
-                //txtLastName.Text = luser.LastName;
-                //txtName.Text = luser.Name;
+        
 
             }
             else
