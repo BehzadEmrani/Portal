@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMaster.Master" AutoEventWireup="true" CodeBehind="Edit.aspx.cs" Inherits="Portal.Edit" Async="true" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="CPHR" runat="server">
@@ -15,7 +16,7 @@
 
 
 
-           <asp:Table ID="Table1" runat="server" HorizontalAlign="Center">
+        <asp:table id="Table1" runat="server" horizontalalign="Center">
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
@@ -32,11 +33,11 @@
 
 
 
-        </asp:Table>
+        </asp:table>
 
 
 
-        <asp:Table runat="server">
+        <asp:table runat="server">
 
 
           
@@ -145,11 +146,22 @@
                     <asp:TextBox ID="txtp" runat="server"></asp:TextBox>
                 </asp:TableCell>
 
+
+
+           
+
             </asp:TableFooterRow>
 
 
+             <asp:TableFooterRow>
+                <asp:TableCell>
+                    <asp:Label ID="Labelactive" runat="server" Text=" فعال/غیر فعال "></asp:Label>
+                </asp:TableCell>
 
-
+                <asp:TableCell>
+                    <asp:TextBox ID="Textactive" runat="server"></asp:TextBox>
+                </asp:TableCell>
+            </asp:TableFooterRow>
 
 
             <asp:TableFooterRow>
@@ -159,9 +171,9 @@
                 </asp:TableCell>
             </asp:TableFooterRow>
 
-        </asp:Table>
+        </asp:table>
 
-        <asp:Table ID="tb" runat="server" HorizontalAlign="Center">
+        <asp:table id="tb" runat="server" horizontalalign="Center">
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
@@ -171,7 +183,7 @@
 
 
 
-        </asp:Table>
+        </asp:table>
 
 
 

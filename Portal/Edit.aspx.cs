@@ -72,6 +72,7 @@ namespace Portal
                 txttn.Text = "";
                 txtun.Text = "";
                 txtp.Text = "";
+                Textactive.Text="";
 
                 Label8.Visible = true;
 
