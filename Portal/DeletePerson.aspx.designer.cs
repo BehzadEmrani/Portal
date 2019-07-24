@@ -31,24 +31,6 @@ namespace Portal {
         protected global::System.Web.UI.WebControls.TextBox txtni;
         
         /// <summary>
-        /// lbl8 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lbl8;
-        
-        /// <summary>
-        /// lblt control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblt;
-        
-        /// <summary>
         /// tb control.
         /// </summary>
         /// <remarks>
@@ -65,5 +47,14 @@ namespace Portal {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Editbtn;
+        
+        /// <summary>
+        /// lbl8 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label lbl8;
     }
 }

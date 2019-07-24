@@ -14,7 +14,6 @@ namespace Portal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
         }
 
 
@@ -22,20 +21,13 @@ namespace Portal
         {
 
             var luser = new Person();
-
-
-            //luser.Name = txtn.Text.Trim();
-            //luser.LastName = txtln.Text.Trim();
             luser.NationalId = txtni.Text.Trim();
 
-
             RecognisePersonAsync(luser);
-
 
         }
         private  void RecognisePersonAsync(Person luser)
         {
-
 
             HttpClient client = new HttpClient();
             client.BaseAddress = new Uri("http://localhost/api/api/PersonCTR/");
@@ -45,52 +37,24 @@ namespace Portal
 
 
 
-
             if (response.IsSuccessStatusCode)
             {
 
-
-                //luser = await response.Content.ReadAsAsync<Person>();
-                lblt.Text = luser.NationalId;// luser.NationalId;
-                lblt.Visible = true;
-                ////goto exit;
-                if (luser.NationalId == "UnKnown")
-                {
-
-
-                    lbl8.Text = "این شخص وجود ندارد";
-                    lbl8.Visible = true;
-                    goto exit;
-                }
-
-
-                if (luser.NationalId == "UnKnowni")
-                {
-
-                    lbl8.Text = "این کاربر قبلا ثبت شده است";
-                    lbl8.Visible = true;
-                    goto exit;
-                }
-
-              
-                txtni.Text =luser.Active+"????";
+                txtni.Text = "";
 
                 lbl8.Visible = true;
-               
 
             }
+
             else
             {
-                lbl8.Text = "لطفا صحت اطلاعات شخصی خود را مجددا چک کنید";
+                lbl8.Text = "این کاربر تاکنون ثبت نشده است.";
                 lbl8.Visible = true;
-
             }
 
-
-        exit:;
+        //exit:;
 
         }
-
 
     }
 }
