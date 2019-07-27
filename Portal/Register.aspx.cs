@@ -23,8 +23,6 @@ namespace Portal
         }
 
 
-
-
         protected void Button_Click(object sender, EventArgs e)
         {
 
@@ -104,6 +102,13 @@ namespace Portal
                 Label8.Visible = true;
 
             }
+
+
+
+            
+
+
+
 
 
         exit:;

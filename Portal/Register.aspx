@@ -138,18 +138,13 @@
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
                     <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" Style="text-align: center;" OnClick="Button_Click" />
+                    
+                    <a href="DeletePerson.aspx" class="nbtn black" Style="text-align: center;">حذف </a>
+                    <a href="Edit.aspx" class="nbtn black" Style="text-align: center;"> ویرایش</a>
+
                 </asp:TableCell>
             </asp:TableFooterRow>
 
-
-
-
-
-            <asp:TableFooterRow HorizontalAlign="Center">
-                <asp:TableCell HorizontalAlign="Center">
-                    <asp:Button ID="Editbtn" runat="server" Text="حذف" class="nbtn black" Style="text-align: center;" />
-                </asp:TableCell>
-            </asp:TableFooterRow>
 
 
 
