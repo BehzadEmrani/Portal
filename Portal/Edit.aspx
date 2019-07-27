@@ -25,7 +25,7 @@
                 </asp:TableCell>
 
                 <asp:TableCell>
-                    <asp:TextBox ID="TextBoxtozih" runat="server"></asp:TextBox> 
+                    <asp:TextBox ID="OldNI" runat="server"></asp:TextBox> 
 
 
                 </asp:TableCell>

@@ -20,7 +20,7 @@ namespace Portal.Models
         public string UserName { get; set; }
         public string Password { get; set; }
         public string Active { get; set; }
-        public string Iflag { get; set; }
+        public string OldNI { get; set; }
 
     }
 }

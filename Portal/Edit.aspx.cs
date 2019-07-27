@@ -27,6 +27,9 @@ namespace Portal
             var luser = new Person();
 
 
+
+            luser.OldNI = OldNI.Text.Trim();
+
             luser.Name = txtname.Text.Trim();
             luser.LastName = txtlname.Text.Trim();
             luser.NationalId = txtni.Text.Trim();
@@ -35,6 +38,7 @@ namespace Portal
             luser.PhoneNumber = txttn.Text.Trim();
             luser.UserName = txtun.Text.Trim();
             luser.Password = txtp.Text.Trim();
+            luser.Active = Textactive.Text.Trim();
 
 
 
@@ -45,13 +49,13 @@ namespace Portal
         private async void RecognisePersonAsync(Person luser)
         {
 
-                HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("http://localhost/api/api/PersonCTR/");
-                client.DefaultRequestHeaders.Accept.Clear();
-                client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-                //var response = client.PutAsync(luser.NationalId).Result;
-         
-           var response = client.PutAsJsonAsync(luser.NationalId, luser).Result;
+            HttpClient client = new HttpClient();
+            client.BaseAddress = new Uri("http://localhost/api/api/PersonCTR/");
+            client.DefaultRequestHeaders.Accept.Clear();
+            client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            //var response = client.PutAsync(luser.NationalId).Result;
+
+            var response = client.PutAsJsonAsync(luser.NationalId, luser).Result;
 
 
 
@@ -60,10 +64,11 @@ namespace Portal
             {
 
 
-              //  luser = await response.Content.ReadAsAsync<Person>();
+                //  luser = await response.Content.ReadAsAsync<Person>();
                 txtname.Text = luser.NationalId;
-                
 
+
+                OldNI.Text = "";
                 txtname.Text = "";
                 txtlname.Text = "";
                 txtni.Text = "";
@@ -72,7 +77,7 @@ namespace Portal
                 txttn.Text = "";
                 txtun.Text = "";
                 txtp.Text = "";
-                Textactive.Text="";
+                Textactive.Text = "";
 
                 Label8.Visible = true;
 
@@ -93,4 +98,3 @@ namespace Portal
 
     }
 }
-
