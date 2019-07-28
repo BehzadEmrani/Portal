@@ -37,11 +37,20 @@ namespace Portal
 
 
 
-            if (response.IsSuccessStatusCode)
+            if (txtni.Text.Trim() == "")
+            {
+                lbl8.Text = "لطفا شماره ملی  کاربر مورد نظر را وارد کنید";
+                lbl8.Visible = true;
+            }
+
+
+
+            else if (response.IsSuccessStatusCode)
             {
 
                 txtni.Text = "";
 
+                lbl8.Text = "حذف با موفقیت انجام شد";
                 lbl8.Visible = true;
 
             }
@@ -52,7 +61,10 @@ namespace Portal
                 lbl8.Visible = true;
             }
 
-        //exit:;
+
+           
+
+            //exit:;
 
         }
 

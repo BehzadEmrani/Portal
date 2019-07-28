@@ -24,9 +24,24 @@ namespace Portal
 
         {
 
+
+            if(txtname.Text.Trim()=="" || txtlname.Text.Trim()=="" || txtni.Text.Trim() == "" || txtage.Text.Trim() == "" || txtpc.Text.Trim() == ""
+                || txttn.Text.Trim() == "" || txtun.Text.Trim() == "" || txtp.Text.Trim()=="" || Textactive.Text.Trim()=="")
+            {
+                Label8.Text = "لطفا تمامی فیلدها را پر کنید";
+                Label8.Visible = true;
+
+            }
+
+
+
+            else
+            {
+
+            
             var luser = new Person();
 
-
+            
 
             luser.OldNI = OldNI.Text.Trim();
 
@@ -41,8 +56,23 @@ namespace Portal
             luser.Active = Textactive.Text.Trim();
 
 
+                //if (Rdb_active.Checked == true)
+                //{
 
-            RecognisePersonAsync(luser);
+                //    luser.Active = "true";
+
+                //}
+
+                //if (rdb_deactive.IsChecked == true)
+                //{
+                //    SearchString += SearchString += " And useractive=0";
+                //}
+
+
+
+                RecognisePersonAsync(luser);
+
+            }
 
 
         }
@@ -79,9 +109,14 @@ namespace Portal
                 txtp.Text = "";
                 Textactive.Text = "";
 
+                Label8.Text = "ویرایش با موفقیت انجام شد";
                 Label8.Visible = true;
 
 
+            }
+            else if(luser.UserName == "Repeated")
+            {
+                Label8.Text = "کاربر";
             }
             else
             {

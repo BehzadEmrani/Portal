@@ -16,7 +16,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label1" runat="server" Text="نام"></asp:Label>
                 </asp:TableCell>
 
@@ -28,7 +28,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label10" runat="server" Text=" نام خانوادگی"></asp:Label>
                 </asp:TableCell>
 
@@ -44,7 +44,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label2" runat="server" Text="کدملی"></asp:Label>
                 </asp:TableCell>
 
@@ -56,7 +56,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label3" runat="server" Text="سن"></asp:Label>
                 </asp:TableCell>
 
@@ -70,7 +70,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label4" runat="server" Text="کد پرسنلی"></asp:Label>
                 </asp:TableCell>
 
@@ -82,7 +82,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label5" runat="server" Text="شماره تلفن"></asp:Label>
                 </asp:TableCell>
 
@@ -97,7 +97,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label6" runat="server" Text="نام کاربری"></asp:Label>
                 </asp:TableCell>
 
@@ -109,7 +109,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell Style="direction: ltr">
                     <asp:Label ID="Label7" runat="server" Text="کلمه عبور "></asp:Label>
                 </asp:TableCell>
 
@@ -126,7 +126,7 @@
 
             <asp:TableFooterRow>
                 <asp:TableCell>
-                    <asp:Label ID="Label8" runat="server" Text="ثبت نام با موفقیت انجام شد" Visible="false"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="پیام خودکار سیستم " Visible="false"></asp:Label>
                     <asp:Label ID="Label9" runat="server" Text="id" Visible="false"></asp:Label>
                 </asp:TableCell>
             </asp:TableFooterRow>
@@ -137,15 +137,17 @@
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
-                    <asp:Button ID="Button" runat="server" Text="ثبت" class="nbtn black" Style="text-align: center;" OnClick="Button_Click" />
-                    
-                    <a href="DeletePerson.aspx" class="nbtn black" Style="text-align: center;">حذف </a>
-                    <a href="Edit.aspx" class="nbtn black" Style="text-align: center;"> ویرایش</a>
+                    <asp:Button ID="Button" runat="server" Text="ثبت" Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';"
+                        OnClick="Button_Click" />
+
+                    <br /> <br /> <br />
+                    <a href="Edit.aspx" class="black" style="text-align: center;"> ورود به صفحه ویرایش</a>
+                    <br />
+                    <a href="DeletePerson.aspx" style="text-align: center;">ورود به صفحه حذف </a>
+                    <br />
 
                 </asp:TableCell>
             </asp:TableFooterRow>
-
-
 
 
         </asp:Table>

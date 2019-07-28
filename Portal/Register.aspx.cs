@@ -9,6 +9,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 
 using System.Security.Cryptography;
+using System.Text;
 
 namespace Portal
 {
@@ -26,6 +27,16 @@ namespace Portal
         protected void Button_Click(object sender, EventArgs e)
         {
 
+
+            if(txtName.Text.Trim() == "" || txtLastName.Text.Trim() == "" || txtNi.Text.Trim() == "" || txtAge.Text.Trim() == "" || txtPersonId.Text.Trim() == "" || txtTel.Text.Trim() == ""
+                || txtUserName.Text.Trim() == "" || txtPassword.Text.Trim() == "")
+            {
+                Label8.Text = "لطفا تمامی فیلدها را پر کنید";
+                Label8.Visible = true;
+            }
+
+
+
             var luser = new Person();
 
 
@@ -37,7 +48,7 @@ namespace Portal
             luser.PhoneNumber = txtTel.Text.Trim();
             luser.UserName = txtUserName.Text.Trim();
             luser.Password = txtPassword.Text.Trim();
-
+            ////////luser.Password = ComputeSha256Hash(txtPassword.Text.Trim());
 
 
             RecognisePersonAsync(luser);
@@ -62,9 +73,7 @@ namespace Portal
 
 
                 luser = await response.Content.ReadAsAsync<Person>();
-                //Label9.Text = luser.NationalId;
-                //Label9.Visible = true;
-                //goto exit;
+            
                 if (luser.UserName == "Repeated")
                 {
 
@@ -75,7 +84,7 @@ namespace Portal
                 }
 
 
-                if (luser.NationalId == "Registerd")
+                if (luser.UserName == "Registered")
                 {
 
                     Label8.Text = "این کاربر قبلا ثبت شده است";
@@ -92,10 +101,13 @@ namespace Portal
                 txtUserName.Text = "";
                 txtPassword.Text = "";
 
+                Label8.Text = "ثبت نام با موفقیت انجام شد";
                 Label8.Visible = true;
         
 
             }
+
+
             else
             {
                 Label8.Text = "لطفا صحت اطلاعات شخصی خود را مجددا چک کنید";
@@ -104,16 +116,27 @@ namespace Portal
             }
 
 
-
-            
-
-
-
-
-
         exit:;
 
         }
+
+        //////////static string ComputeSha256Hash(string rawData)
+        //////////{
+        //////////    // Create a SHA256   
+        //////////    using (SHA256 sha256Hash = SHA256.Create())
+        //////////    {
+        //////////        // ComputeHash - returns byte array  
+        //////////        byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(rawData));
+
+        //////////        // Convert byte array to a string   
+        //////////        StringBuilder builder = new StringBuilder();
+        //////////        for (int i = 0; i < bytes.Length; i++)
+        //////////        {
+        //////////            builder.Append(bytes[i].ToString("x2"));
+        //////////        }
+        //////////        return builder.ToString();
+        //////////    }
+        //////////}
 
 
     }

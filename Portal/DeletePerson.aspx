@@ -9,7 +9,7 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="CPHC" runat="server">
 
 
-    <div style="padding-top: 30px; text-align:center;">
+    <div style="padding-top: 30px; text-align: center;">
 
 
         <asp:TableFooterRow>
@@ -32,14 +32,23 @@
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
-                    <asp:Button ID="Editbtn" runat="server" Text="حذف" class="nbtn black" Style="text-align: center;" OnClick="Editbtn_Click" />
+                    <asp:Button ID="Editbtn" runat="server" Text="حذف"  Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';" 
+                        OnClick="Editbtn_Click" />
+
+                    <br /> <br /> <br />
+                    <a href="Register.aspx" style="text-align: center;">ورود به صفحه ثبت </a>
+                    <br />
+                    <a href="Edit.aspx" class="black" style="text-align: center;">ورود به صفحه ویرایش</a>
+                    <br />
+
+
                 </asp:TableCell>
             </asp:TableFooterRow>
 
 
             <asp:TableFooterRow>
                 <asp:TableCell>
-                    <asp:Label ID="lbl8" runat="server" Text="حذف با موفقیت انجام شد" Visible="false" Style="color:red"></asp:Label>
+                    <asp:Label ID="lbl8" runat="server" Text="پیام خودکار سیستم" Visible="false" Style="color: red"></asp:Label>
                 </asp:TableCell>
             </asp:TableFooterRow>
 

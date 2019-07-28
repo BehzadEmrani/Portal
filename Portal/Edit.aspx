@@ -16,16 +16,16 @@
 
 
 
-        <asp:table id="Table1" runat="server" horizontalalign="Center">
+        <asp:Table ID="Table1" runat="server" HorizontalAlign="Center">
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
-                    
+
                     <asp:Label ID="Labeltozih" runat="server" Text="لطفا کد ملی فرد مورد نظر را وارد کنید"></asp:Label>
                 </asp:TableCell>
 
                 <asp:TableCell>
-                    <asp:TextBox ID="OldNI" runat="server"></asp:TextBox> 
+                    <asp:TextBox ID="OldNI" runat="server"></asp:TextBox>
 
 
                 </asp:TableCell>
@@ -33,19 +33,19 @@
 
 
 
-        </asp:table>
+        </asp:Table>
 
 
 
-        <asp:table runat="server">
+        <asp:Table runat="server">
 
 
-          
+
 
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labeln" runat="server" Text="نام"></asp:Label>
                 </asp:TableCell>
 
@@ -57,7 +57,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelln" runat="server" Text=" نام خانوادگی"></asp:Label>
                 </asp:TableCell>
 
@@ -73,7 +73,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelni" runat="server" Text="کدملی"></asp:Label>
                 </asp:TableCell>
 
@@ -85,7 +85,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelage" runat="server" Text="سن"></asp:Label>
                 </asp:TableCell>
 
@@ -99,7 +99,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelpc" runat="server" Text="کد پرسنلی"></asp:Label>
                 </asp:TableCell>
 
@@ -111,7 +111,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labeltn" runat="server" Text="شماره تلفن"></asp:Label>
                 </asp:TableCell>
 
@@ -126,7 +126,7 @@
 
             <asp:TableFooterRow>
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelun" runat="server" Text="نام کاربری"></asp:Label>
                 </asp:TableCell>
 
@@ -138,7 +138,7 @@
                 <asp:TableCell Width="10px"></asp:TableCell>
 
 
-                <asp:TableCell>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelp" runat="server" Text="کلمه عبور "></asp:Label>
                 </asp:TableCell>
 
@@ -148,42 +148,59 @@
 
 
 
-           
+
 
             </asp:TableFooterRow>
 
 
-             <asp:TableFooterRow>
-                <asp:TableCell>
+            <asp:TableFooterRow>
+                <asp:TableCell style="direction:ltr">
                     <asp:Label ID="Labelactive" runat="server" Text=" فعال/غیر فعال "></asp:Label>
                 </asp:TableCell>
 
                 <asp:TableCell>
                     <asp:TextBox ID="Textactive" runat="server"></asp:TextBox>
+
+<%--                    <asp:RadioButton ID="Rdb_active" runat="server" Checked="Rdb_active_Checked" />
+                    <asp:RadioButton ID="Rdb_deactive" runat="server" />--%>
+
                 </asp:TableCell>
             </asp:TableFooterRow>
 
 
             <asp:TableFooterRow>
                 <asp:TableCell>
-                    <asp:Label ID="Label8" runat="server" Text="ویرایش با موفقیت انجام شد" Visible="false"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="پیام خودکار سیستم" Visible="false"></asp:Label>
                     <asp:Label ID="Label9" runat="server" Text="id" Visible="false"></asp:Label>
                 </asp:TableCell>
             </asp:TableFooterRow>
 
-        </asp:table>
+        </asp:Table>
 
-        <asp:table id="tb" runat="server" horizontalalign="Center">
+        <asp:Table ID="tb" runat="server" HorizontalAlign="Center">
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
-                    <asp:Button ID="btnEdit" runat="server" Text="ویرایش" class="nbtn black" Style="text-align: center;" OnClick="btnEdit_Click"/>
+
+
+                    <asp:Button ID="btnEdit" runat="server" Text="ویرایش"  Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';" 
+                        OnClick="btnEdit_Click" />
+
+
+                    <br /> <br /> <br />
+                    <a href="Register.aspx" > ورود به صفحه ثبت</a>
+                    <br />
+                     <a href="DeletePerson.aspx">ورود به صفحه حذف </a>
+                    <br />
+
                 </asp:TableCell>
+
+            
             </asp:TableFooterRow>
 
 
 
-        </asp:table>
+        </asp:Table>
 
 
 
