@@ -15,7 +15,7 @@
         <asp:TableFooterRow>
 
             <asp:TableCell>
-                <asp:Label ID="lblc" runat="server" Text="کدملی"></asp:Label>
+                <asp:Label ID="lblc" runat="server" Text="کد ملی"></asp:Label>
             </asp:TableCell>
 
             <asp:TableCell>
@@ -30,6 +30,15 @@
 
         <asp:Table ID="tb" runat="server" HorizontalAlign="Center">
 
+
+              <asp:TableFooterRow>
+                <asp:TableCell>
+                    <asp:Label ID="lbl8" runat="server" Text="پیام خودکار سیستم" Visible="false" Style="color: red"></asp:Label>
+                    <br />
+                </asp:TableCell>
+            </asp:TableFooterRow>
+
+
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
                     <asp:Button ID="Editbtn" runat="server" Text="حذف"  Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';" 
@@ -38,19 +47,13 @@
                     <br /> <br /> <br />
                     <a href="Register.aspx" style="text-align: center;">ورود به صفحه ثبت </a>
                     <br />
-                    <a href="Edit.aspx" class="black" style="text-align: center;">ورود به صفحه ویرایش</a>
+                    <a href="EditP1.aspx" class="black" style="text-align: center;">ورود به صفحه ویرایش</a>
                     <br />
 
 
                 </asp:TableCell>
             </asp:TableFooterRow>
-
-
-            <asp:TableFooterRow>
-                <asp:TableCell>
-                    <asp:Label ID="lbl8" runat="server" Text="پیام خودکار سیستم" Visible="false" Style="color: red"></asp:Label>
-                </asp:TableCell>
-            </asp:TableFooterRow>
+          
 
         </asp:Table>
 

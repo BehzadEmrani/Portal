@@ -28,7 +28,7 @@ namespace Portal
         {
 
 
-            if(txtName.Text.Trim() == "" || txtLastName.Text.Trim() == "" || txtNi.Text.Trim() == "" || txtAge.Text.Trim() == "" || txtPersonId.Text.Trim() == "" || txtTel.Text.Trim() == ""
+            if (txtName.Text.Trim() == "" || txtLastName.Text.Trim() == "" || txtNi.Text.Trim() == "" || txtAge.Text.Trim() == "" || txtPersonId.Text.Trim() == "" || txtTel.Text.Trim() == ""
                 || txtUserName.Text.Trim() == "" || txtPassword.Text.Trim() == "")
             {
                 Label8.Text = "لطفا تمامی فیلدها را پر کنید";
@@ -66,14 +66,19 @@ namespace Portal
             var response = client.PostAsJsonAsync("api/PersonCTR/", luser).Result;
 
 
+            if (txtName.Text.Trim() == "" || txtLastName.Text.Trim() == "" || txtNi.Text.Trim() == "" || txtAge.Text.Trim() == "" || txtPersonId.Text.Trim() == "" || txtTel.Text.Trim() == ""
+                || txtUserName.Text.Trim() == "" || txtPassword.Text.Trim() == "")
+            {
+                Label8.Text = "لطفا تمامی فیلدها را پر کنید";
+                Label8.Visible = true;
+            }
 
-
-            if (response.IsSuccessStatusCode)
+         else   if (response.IsSuccessStatusCode)
             {
 
 
                 luser = await response.Content.ReadAsAsync<Person>();
-            
+
                 if (luser.UserName == "Repeated")
                 {
 
@@ -103,7 +108,7 @@ namespace Portal
 
                 Label8.Text = "ثبت نام با موفقیت انجام شد";
                 Label8.Visible = true;
-        
+
 
             }
 

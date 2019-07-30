@@ -45,7 +45,7 @@
             <asp:TableFooterRow>
 
                 <asp:TableCell Style="direction: ltr">
-                    <asp:Label ID="Label2" runat="server" Text="کدملی"></asp:Label>
+                    <asp:Label ID="Label2" runat="server" Text="کد ملی"></asp:Label>
                 </asp:TableCell>
 
                 <asp:TableCell>
@@ -121,38 +121,44 @@
 
 
 
+        </asp:Table>
 
+
+
+
+
+
+        <asp:Table runat="server" HorizontalAlign="Center">
 
 
             <asp:TableFooterRow>
                 <asp:TableCell>
-                    <asp:Label ID="Label8" runat="server" Text="پیام خودکار سیستم " Visible="false"></asp:Label>
-                    <asp:Label ID="Label9" runat="server" Text="id" Visible="false"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="پیام خودکار سیستم " Visible="false" Style="color: red;"></asp:Label>
+                    <br />
                 </asp:TableCell>
             </asp:TableFooterRow>
 
-        </asp:Table>
-
-        <asp:Table ID="tb" runat="server" HorizontalAlign="Center">
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
                     <asp:Button ID="Button" runat="server" Text="ثبت" Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';"
                         OnClick="Button_Click" />
 
-                    <br /> <br /> <br />
-                    <a href="Edit.aspx" class="black" style="text-align: center;"> ورود به صفحه ویرایش</a>
+
+                    <br />
+                    <br />
+                    <br />
+                    <a href="EditP1.aspx" class="black" style="text-align: center;">ورود به صفحه ویرایش</a>
                     <br />
                     <a href="DeletePerson.aspx" style="text-align: center;">ورود به صفحه حذف </a>
                     <br />
+
 
                 </asp:TableCell>
             </asp:TableFooterRow>
 
 
         </asp:Table>
-
-
 
 
     </div>
