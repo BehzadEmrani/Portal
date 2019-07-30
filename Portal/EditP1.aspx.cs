@@ -40,58 +40,58 @@ namespace Portal
 
 
 
-            if (OldNI.Text.Trim() == "" )
+            if (OldNI.Text.Trim() == "")
             {
                 Label8.Text = "لطفا تمامی فیلدها را پر کنید";
                 Label8.Visible = true;
             }
 
-               else if (response.IsSuccessStatusCode)
-                {
-                    luser = await response.Content.ReadAsAsync<Person>();
-                    txtname.Text = luser.Name;
-                    txtlname.Text = luser.LastName;
-                    txtni.Text = luser.NationalId;
-                    txtage.Text = luser.Age;
-                    txtpc.Text = luser.PersonalCode;
-                    txttn.Text = luser.PhoneNumber;
-                    txtun.Text = luser.UserName;
-                    txtp.Text = luser.Password;
-                    Textactive.Text = luser.Active;
+            else if (response.IsSuccessStatusCode)
+            {
+                luser = await response.Content.ReadAsAsync<Person>();
+                txtname.Text = luser.Name;
+                txtlname.Text = luser.LastName;
+                txtni.Text = luser.NationalId;
+                txtage.Text = luser.Age;
+                txtpc.Text = luser.PersonalCode;
+                txttn.Text = luser.PhoneNumber;
+                txtun.Text = luser.UserName;
+                txtp.Text = luser.Password;
+                Textactive.Text = luser.Active;
 
 
-                    Labeltozih.Visible = false;
-                    OldNI.Visible = false;
-                    btnEdit.Visible = false;
+                Labeltozih.Visible = false;
+                OldNI.Visible = false;
+                btnEdit.Visible = false;
 
 
-                    Labeln.Visible = true;
-                    txtname.Visible = true;
-                    Labelln.Visible = true;
-                    txtlname.Visible = true;
-                    Labelni.Visible = true;
-                    txtni.Visible = true;
-                    Labelage.Visible = true;
-                    txtage.Visible = true;
-                    Labelpc.Visible = true;
-                    txtpc.Visible = true;
-                    Labeltn.Visible = true;
-                    txttn.Visible = true;
-                    Labelun.Visible = true;
-                    txtun.Visible = true;
-                    Labelp.Visible = true;
-                    txtp.Visible = true;
-                    Labelactive.Visible = true;
-                    Textactive.Visible = true;
-                    btnreg.Visible = true;
+                Labeln.Visible = true;
+                txtname.Visible = true;
+                Labelln.Visible = true;
+                txtlname.Visible = true;
+                Labelni.Visible = true;
+                txtni.Visible = true;
+                Labelage.Visible = true;
+                txtage.Visible = true;
+                Labelpc.Visible = true;
+                txtpc.Visible = true;
+                Labeltn.Visible = true;
+                txttn.Visible = true;
+                Labelun.Visible = true;
+                txtun.Visible = true;
+                Labelp.Visible = true;
+                txtp.Visible = true;
+                Labelactive.Visible = true;
+                Textactive.Visible = true;
+                btnreg.Visible = true;
 
 
-                }
+            }
 
-            exit:;
+        exit:;
 
 
-           
+
 
         }
 
@@ -164,7 +164,7 @@ namespace Portal
 
 
                 luser = await response.Content.ReadAsAsync<Person>();
-            
+
 
                 OldNI.Text = "";
                 txtname.Text = "";
@@ -228,4 +228,3 @@ namespace Portal
 
     }
 }
-
