@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Portal
-{
-
-
-    public partial class EditP1
-    {
-
+namespace Portal {
+    
+    
+    public partial class EditP1 {
+        
         /// <summary>
         /// Table1 control.
         /// </summary>
@@ -22,7 +20,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Table Table1;
-
+        
         /// <summary>
         /// Labeltozih control.
         /// </summary>
@@ -31,7 +29,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labeltozih;
-
+        
         /// <summary>
         /// OldNI control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox OldNI;
-
+        
         /// <summary>
         /// Labeln control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labeln;
-
+        
         /// <summary>
         /// txtname control.
         /// </summary>
@@ -58,7 +56,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtname;
-
+        
         /// <summary>
         /// Labelln control.
         /// </summary>
@@ -67,7 +65,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelln;
-
+        
         /// <summary>
         /// txtlname control.
         /// </summary>
@@ -76,7 +74,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtlname;
-
+        
         /// <summary>
         /// Labelni control.
         /// </summary>
@@ -85,7 +83,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelni;
-
+        
         /// <summary>
         /// txtni control.
         /// </summary>
@@ -94,7 +92,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtni;
-
+        
         /// <summary>
         /// Labelage control.
         /// </summary>
@@ -103,7 +101,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelage;
-
+        
         /// <summary>
         /// txtage control.
         /// </summary>
@@ -112,7 +110,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtage;
-
+        
         /// <summary>
         /// Labelpc control.
         /// </summary>
@@ -121,7 +119,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelpc;
-
+        
         /// <summary>
         /// txtpc control.
         /// </summary>
@@ -130,7 +128,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpc;
-
+        
         /// <summary>
         /// Labeltn control.
         /// </summary>
@@ -139,7 +137,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labeltn;
-
+        
         /// <summary>
         /// txttn control.
         /// </summary>
@@ -148,7 +146,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txttn;
-
+        
         /// <summary>
         /// Labelun control.
         /// </summary>
@@ -157,7 +155,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelun;
-
+        
         /// <summary>
         /// txtun control.
         /// </summary>
@@ -166,7 +164,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtun;
-
+        
         /// <summary>
         /// Labelp control.
         /// </summary>
@@ -175,7 +173,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Labelp;
-
+        
         /// <summary>
         /// txtp control.
         /// </summary>
@@ -184,25 +182,25 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtp;
-
+        
         /// <summary>
-        /// Labelactive control.
+        /// RDB1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Labelactive;
-
+        protected global::System.Web.UI.WebControls.RadioButtonList RDB1;
+        
         /// <summary>
-        /// Textactive control.
+        /// Mylabel control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox Textactive;
-
+        protected global::System.Web.UI.WebControls.Label Mylabel;
+        
         /// <summary>
         /// Label8 control.
         /// </summary>
@@ -211,7 +209,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label Label8;
-
+        
         /// <summary>
         /// btnEdit control.
         /// </summary>
@@ -220,7 +218,7 @@ namespace Portal
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnEdit;
-
+        
         /// <summary>
         /// btnreg control.
         /// </summary>

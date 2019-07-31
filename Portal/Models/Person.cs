@@ -11,6 +11,7 @@ namespace Portal.Models
 
         [Key]
         public int id { get; set; }
+        public int Person_ID { get; set; }
         public string Name { get; set; }
         public string LastName { get; set; }
         public string NationalId { get; set; }
@@ -19,7 +20,7 @@ namespace Portal.Models
         public string PhoneNumber { get; set; }
         public string UserName { get; set; }
         public string Password { get; set; }
-        public string Active { get; set; }
+        public Boolean Active { get; set; }
         public string OldNI { get; set; }
 
     }

@@ -57,7 +57,20 @@ namespace Portal
                 txttn.Text = luser.PhoneNumber;
                 txtun.Text = luser.UserName;
                 txtp.Text = luser.Password;
-                Textactive.Text = luser.Active;
+                Mylabel.Text = luser.Person_ID.ToString();
+                if(luser.Active)
+                {
+                    RDB1.Items[0].Selected = true;
+                }
+                else
+                {
+                    RDB1.Items[1].Selected = true;
+                }
+
+                //Textactive.Text = luser.Active;
+
+
+
 
 
                 Labeltozih.Visible = false;
@@ -81,9 +94,11 @@ namespace Portal
                 txtun.Visible = true;
                 Labelp.Visible = true;
                 txtp.Visible = true;
-                Labelactive.Visible = true;
-                Textactive.Visible = true;
+                //Labelactive.Visible = true;
+                //Textactive.Visible = true;
                 btnreg.Visible = true;
+
+                RDB1.Visible = true;
 
 
             }
@@ -103,7 +118,7 @@ namespace Portal
         {
 
             if (txtname.Text.Trim() == "" || txtlname.Text.Trim() == "" || txtni.Text.Trim() == "" || txtage.Text.Trim() == "" || txtpc.Text.Trim() == ""
-                || txttn.Text.Trim() == "" || txtun.Text.Trim() == "" || txtp.Text.Trim() == "" || Textactive.Text.Trim() == "")
+                || txttn.Text.Trim() == "" || txtun.Text.Trim() == "" || txtp.Text.Trim() == "")
             {
                 Label8.Text = "لطفا تمامی فیلدها را پر کنید";
                 Label8.Visible = true;
@@ -119,14 +134,14 @@ namespace Portal
 
                 var luser = new Person();
 
-                if (luser.UserName == "Repeated")
-                {
-                    Label8.Text = "نام کاربری یا کد ملی تکراری است.";
-                    Label8.Visible = true;
-                }
+                //if (luser.UserName == "Repeated")
+                //{
+                //    Label8.Text = "نام کاربری یا کد ملی تکراری است.";
+                //    Label8.Visible = true;
+                //}
 
-                else
-                {
+                //else
+                //{
                     luser.OldNI = OldNI.Text.Trim();
 
                     luser.Name = txtname.Text.Trim();
@@ -137,10 +152,19 @@ namespace Portal
                     luser.PhoneNumber = txttn.Text.Trim();
                     luser.UserName = txtun.Text.Trim();
                     luser.Password = txtp.Text.Trim();
-                    luser.Active = Textactive.Text.Trim();
-
-                    Recognise(luser);
+                luser.Person_ID = Convert.ToInt32(Mylabel.Text);
+                if (RDB1.Items[0].Selected)
+                { luser.Active = true;
                 }
+                else
+                {
+                    luser.Active = false;
+                }
+
+                //luser.Active = Textactive.Text.Trim();
+
+                Recognise(luser);
+                //}
 
             }
 
@@ -148,13 +172,15 @@ namespace Portal
         }
         private async void Recognise(Person luser)
         {
-
+            //Label8.Text = luser.OldNI;
+            //Label8.Visible = true;
+            //goto exit;
             HttpClient client = new HttpClient();
-            client.BaseAddress = new Uri("http://localhost/api/api/PersonCTR/");
+            client.BaseAddress = new Uri("http://localhost/api/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
 
-            var response = client.PutAsJsonAsync(luser.NationalId, luser).Result;
+            var response = client.PutAsJsonAsync("api/PersonCTR/", luser).Result;
 
 
 
@@ -175,7 +201,7 @@ namespace Portal
                 txttn.Text = "";
                 txtun.Text = "";
                 txtp.Text = "";
-                Textactive.Text = "";
+                //Textactive.Text = "";
 
                 Label8.Text = "ویرایش با موفقیت انجام شد";
                 Label8.Visible = true;
@@ -199,8 +225,11 @@ namespace Portal
                 txtun.Visible = false;
                 Labelp.Visible = false;
                 txtp.Visible = false;
-                Labelactive.Visible = false;
-                Textactive.Visible = false;
+                //Labelactive.Visible = false;
+                //Textactive.Visible = false;
+
+                RDB1.Visible = false;
+
                 btnEdit.Visible = true;
 
                 btnreg.Visible = false;
@@ -213,11 +242,13 @@ namespace Portal
             {
                 Label8.Text = "خطایی رخ داده است";
             }
-
-
-
-        exit:;
-
+           
+if (luser.UserName=="Repeated National Id" || luser.UserName == "Repeated UserName")
+            {
+        //exit:;
+           Label8.Text= luser.UserName;
+            Label8.Visible = true;
+        }
         }
 
 

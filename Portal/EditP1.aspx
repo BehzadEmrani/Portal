@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MainMaster.Master" AutoEventWireup="true" CodeBehind="EditP1.aspx.cs" Inherits="Portal.EditP1" Async="true" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="CPHR" runat="server">
@@ -150,14 +151,21 @@
 
 
             <asp:TableFooterRow>
-                <asp:TableCell Style="direction: ltr">
-                    <asp:Label ID="Labelactive" runat="server" Text=" فعال/غیر فعال " Visible="false"></asp:Label>
-                </asp:TableCell>
 
-                <asp:TableCell>
-                    <asp:TextBox ID="Textactive" runat="server" Visible="false"></asp:TextBox>
+                 <asp:TableCell HorizontalAlign="Center">
+                   
 
-                  
+                    <asp:RadioButtonList ID="RDB1" runat="server" Visible="false" RepeatDirection="Horizontal">
+
+
+                        <asp:ListItem Text="فعال" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="غیر فعال" Value="0"></asp:ListItem>
+
+                    </asp:RadioButtonList>
+
+                        <asp:Label runat="server" ID="Mylabel" Visible="false"></asp:Label>
+
+
                 </asp:TableCell>
             </asp:TableFooterRow>
 
@@ -188,13 +196,7 @@
                     <asp:Button ID="btnEdit" runat="server" Text="ثبت" Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';"
                         OnClick="btnEdit_Click" />
 
-<%--                    <br />
-                    <br />
-                    <br />
-                    <a href="Register.aspx">ورود به صفحه ثبت</a>
-                    <br />
-                    <a href="DeletePerson.aspx">ورود به صفحه حذف </a>
-                    <br />--%>
+
 
                 </asp:TableCell>
             </asp:TableFooterRow>
@@ -202,10 +204,10 @@
 
 
 
-                        <asp:TableFooterRow HorizontalAlign="Center">
+            <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
                     <asp:Button ID="btnreg" runat="server" Text="ویرایش" Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';"
-                        OnClick="btnreg_Click" visible="false"/>
+                        OnClick="btnreg_Click" Visible="false" />
 
                     <br />
                     <br />
@@ -221,16 +223,9 @@
 
         </asp:Table>
 
-      
 
 
-
-
-
-
-
-
-
+       
     </div>
 
 
