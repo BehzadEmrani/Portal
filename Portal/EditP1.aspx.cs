@@ -42,7 +42,7 @@ namespace Portal
 
             if (OldNI.Text.Trim() == "")
             {
-                Label8.Text = "لطفا تمامی فیلدها را پر کنید";
+                Label8.Text = "لطفا شماره ملی  کاربر مورد نظر را وارد کنید";
                 Label8.Visible = true;
             }
 
@@ -101,6 +101,11 @@ namespace Portal
                 RDB1.Visible = true;
 
 
+            }
+            else
+            {
+                Label8.Text = "این کاربر تاکنون ثبت نشده است.";
+                Label8.Visible = true;
             }
 
         exit:;

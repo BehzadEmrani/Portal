@@ -152,18 +152,18 @@
 
             <asp:TableFooterRow>
 
-                 <asp:TableCell HorizontalAlign="Center">
-                   
+                <asp:TableCell HorizontalAlign="Center">
 
-                    <asp:RadioButtonList ID="RDB1" runat="server" Visible="false" RepeatDirection="Horizontal">
+
+                   <%-- <asp:RadioButtonList ID="RDB1" runat="server" Visible="false" RepeatDirection="Horizontal">
 
 
                         <asp:ListItem Text="فعال" Value="1"></asp:ListItem>
                         <asp:ListItem Text="غیر فعال" Value="0"></asp:ListItem>
 
-                    </asp:RadioButtonList>
+                    </asp:RadioButtonList>--%>
 
-                        <asp:Label runat="server" ID="Mylabel" Visible="false"></asp:Label>
+                    <asp:Label runat="server" ID="Mylabel" Visible="false"></asp:Label>
 
 
                 </asp:TableCell>
@@ -193,6 +193,16 @@
 
             <asp:TableFooterRow HorizontalAlign="Center">
                 <asp:TableCell HorizontalAlign="Center">
+
+
+                     <asp:RadioButtonList ID="RDB1" runat="server" Visible="false" RepeatDirection="Horizontal">
+
+
+                        <asp:ListItem Text="فعال" Value="1"></asp:ListItem>
+                        <asp:ListItem Text="غیر فعال" Value="0"></asp:ListItem>
+
+                    </asp:RadioButtonList>
+
                     <asp:Button ID="btnEdit" runat="server" Text="ثبت" Style="text-align: center; width: 70px; background-color: dimgray; font-size: 20px; font-family: 'B Yekan';"
                         OnClick="btnEdit_Click" />
 
@@ -225,7 +235,7 @@
 
 
 
-       
+
     </div>
 
 
