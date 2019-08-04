@@ -75,6 +75,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="AboutUs.aspx" />
     <Content Include="ContactUs.aspx" />
     <Content Include="css\bootstrap-responsive.css" />
     <Content Include="css\bootstrap.css" />
@@ -190,6 +191,7 @@
     <Content Include="img\Login Icon.png" />
     <Content Include="img\login-189-720571.png" />
     <Content Include="img\Logo - 1.png" />
+    <Content Include="img\nern.jpg" />
     <Content Include="img\nern.png" />
     <Content Include="img\portfolio\1.jpg" />
     <Content Include="img\portfolio\10.jpg" />
@@ -329,6 +331,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AboutUs.aspx.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AboutUs.aspx.designer.cs">
+      <DependentUpon>AboutUs.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ContactUs.aspx.cs">
       <DependentUpon>ContactUs.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -83,69 +83,24 @@
                             </ul>--%>
                         </li>
                         <!-- About -->
-                        <li data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">درباره سیمرغ
+                        <li data-dropdown="dropdown"><a href="AboutUs.aspx" class="dropdown-toggle" data-target="#">درباره سیمرغ
                         </a>
-                            <%--                            <ul class="dropdown-menu">
-                                <li><a href="about.html">درباره ما</a>
-                                </li>
-                                <li><a href="sidebar-left.html"> آشنایی با شبکه علمی</a>
-                                </li>
-                                <li><a href="sidebar-right.html">گواهینامه ها</a>
-                                </li>
-                                <li>
-<a href="">عرض کامل</a>
-                                </li>
-                                <li><a href="shortcodes.html">مجوزها </a>
-                                </li>
-                            </ul>--%>
+
                         </li>
                         <!-- Services -->
                         <li><a href="Default.aspx">ورود کاربران</a>
                         </li>
                         <!-- Portfolio -->
                         <li data-dropdown="dropdown"><a href="Samples.aspx" class="dropdown-toggle" data-target="#">نمونه کارها</a>
-                            <%--<ul class="dropdown-menu">
-                                <li><a href="portfolio-3.html">سه ستون</a>
-                                </li>
-                                <li><a href="">
-چهارستون</a>
-                                </li>
-                                <li><a href="portfolio-2.html">دوستون</a>
-                                </li>
-                                <li><a href="">یک ستون</a>
-                                </li>
-                                <li><a href="portfolio-single-1.html">تک پروژه 1</a>
 
-                                </li>
-                                <li><a href="">تک پروژه 2</a>
-                                </li>
-                                <li><a href="portfolio-single-3.html">تک پروژه 3</a>
-                                </li>
-                            </ul>--%>
                         </li>
                         <!-- Blog -->
-                        <%-- <li data-dropdown="dropdown"><a href="#" class="dropdown-toggle" data-target="#">وبلاگ</a>
-                          <%--  <ul class="dropdown-menu">
-                                <li><a href="blog-1.html">وبلاگ عرض کامل</a>
-                                </li>
-                                <li><a href="blog-2.html">وبلاگ نرمال</a>
-                                </li>
-                                <li><a href="blog-single-1.html">پست 1</a>
-                                </li>
-                                <li><a href="">
-پست 2</a>
-                                </li>
-                            </ul>--%>
-                        <%--    </li>--%>
+
+
                         <!-- Contact -->
                         <li><a href="ContactUs.aspx">تماس با ما</a>
 
-<%--                            <ul class="dropdown-menu">
-                                <li><a href="PhoneNumber.aspx">شماره تماس </a>
-   
-                                <li class="current_page_item"><a href="ContactUs.aspx">نشانی</a>
-                                </li>
-                            </ul>--%>
+
 
                         </li>
                     </ul>
