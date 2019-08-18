@@ -168,6 +168,7 @@
     <Content Include="img\glyphicons-halflings-white.png" />
     <Content Include="img\glyphicons-halflings.png" />
     <Content Include="img\gr.png" />
+    <Content Include="img\Home.png" />
     <Content Include="img\icons\add-comment.png" />
     <Content Include="img\icons\arrow-2.jpg" />
     <Content Include="img\icons\arrow-3.jpg" />
